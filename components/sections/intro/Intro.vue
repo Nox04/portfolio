@@ -7,7 +7,7 @@
         <div class="row">
           <div class="col-sm-8 col-md-4 col-lg-3">
             <div class="profile-img margin-b-30">
-              <img src="/images/profile-1-250x250.jpg" />
+              <img src="/images/profile-1-250x250.jpg" :alt="$t('profilePicture')"/>
             </div>
           </div>
 

@@ -5,6 +5,7 @@
       <img
         class="panel-profile-img rounded-circle"
         src="/images/tempo_icon.png"
+        alt="Logo"
       />
       <p class="author-title"><strong>Proyecto: </strong> Tempo</p>
       <p class="author-title">

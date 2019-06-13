@@ -37,5 +37,6 @@ export default {
   university1: 'UNIVERSIDAD POPULAR DEL CESAR',
   university2: 'SERVICIO NACIONAL DE APRENDIZAJE',
   portfolio: 'Portafolio',
-  myWork: 'MI TRABAJO'
+  myWork: 'MI TRABAJO',
+  profilePicture: 'Foto de perfil'
 }

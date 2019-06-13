@@ -37,6 +37,7 @@ export default {
    */
   modules: [
     ['@nuxtjs/axios'],
+    ['@nuxtjs/pwa'],
     [
       'nuxt-i18n',
       {
