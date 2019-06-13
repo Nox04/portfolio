@@ -5,26 +5,17 @@
         <div class="col-sm-12 col-md-3">
           <div class="heading">
             <h3>
-              <b>Sobre mí</b>
+              <b>{{ $t('aboutMe') }}</b>
             </h3>
             <h6 class="font-lite-black">
-              <b>TRAYECTORIA PROFESIONAL</b>
+              <b>{{ $t('professionalPath') }}</b>
             </h6>
           </div>
         </div>
         <!-- col-sm-3 -->
         <div class="col-sm-12 col-md-9">
-          <p class="margin-b-30">
-            Desarrollador de Software Fullstack, con amplios conocimientos en
-            diversas plataformas y más de 8 años de experiencia, amante de la
-            tecnología, innovador y en proceso constante de actualización.
-            Usuario y contribuidor activo de tecnologías libres (Linux, laravel,
-            vue, etc), con un sentido sólido del deber, la responsabilidad y el
-            trabajo en equipo.
-          </p>
-          <p class="margin-b-50">
-            Especializado en programación web y móvil usando las tecnologías:
-          </p>
+          <p class="margin-b-30">{{ $t('bio') }}</p>
+          <p class="margin-b-50">{{ $t('bio2') }}</p>
           <div class="row">
             <div class="col-xs-6 col-md-6 col-lg-2 text-center">
               <spinner :progress="93">

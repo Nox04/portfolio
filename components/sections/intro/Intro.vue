@@ -1,6 +1,7 @@
 <template>
   <section class="intro-section">
     <div class="container">
+      <lang-switcher />
       <intro-header />
       <div class="intro">
         <div class="row">
@@ -14,32 +15,28 @@
             <h2>
               <b>Juan David Angarita</b>
             </h2>
-            <h4 class="font-yellow">Desarrollador Full Stack</h4>
+            <h4 class="font-yellow">{{ $t('fullStack') }}</h4>
             <ul class="information margin-tb-30">
               <li>
-                <b class="font-yellow">NACIMIENTO</b> : Abril 11, 1992 (27 años)
+                <b class="font-yellow">{{ $t('born') }}</b> :
+                {{ $t('bornDate') }}
               </li>
               <li>
-                <b class="font-yellow">EMAIL</b> : juan.angarita.11@gmail.com
+                <b class="font-yellow">EMAIL</b> :
+                <a href="mailto:juan.angarita.11@gmail.com">
+                  juan.angarita.11@gmail.com
+                </a>
               </li>
               <li><b class="font-yellow">NICKNAME</b> : Nox</li>
               <li><b class="font-yellow">OS</b> : Linux</li>
             </ul>
-            <ul class="social-icons">
-              <li>
-                <a href="#">
-                  <i class="ion-social-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="ion-social-twitter"></i>
-                </a>
-              </li>
-            </ul>
+            <social-icons />
           </div>
           <div class="col-sm-10 col-md-3 col-lg-3">
-            <a class="downlad-btn" href="#">Descargar CV</a>
+            <a class="downlad-btn" href="#">
+              <i class="ion-ios-cloud-download-outline s30"></i>
+              {{ $t('download') }}
+            </a>
           </div>
         </div>
       </div>
@@ -48,10 +45,14 @@
 </template>
 <script>
 import Header from './Header'
+import LangSwitcher from './LangSwitcher'
+import SocialIcons from './SocialIcons'
 
 export default {
   components: {
-    'intro-header': Header
+    'intro-header': Header,
+    LangSwitcher,
+    SocialIcons
   }
 }
 </script>

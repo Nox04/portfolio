@@ -64,7 +64,7 @@ export default {
     fill: {
       type: Object,
       default: () => {
-        return { color: '#ffa804' }
+        return { color: '#00adb5' }
       }
     },
     emptyFill: {

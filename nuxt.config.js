@@ -10,7 +10,7 @@ export default {
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
-      { name: 'theme-color', content: '#081c3a' },
+      { name: 'theme-color', content: '#151515' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
@@ -30,14 +30,27 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['~/plugins/vue-circle'],
+  plugins: ['~/plugins/vue-flags'],
 
   /*
    ** Nuxt.js modules
    */
   modules: [
-    // Doc: https://axios.nuxtjs.org/usage
-    '@nuxtjs/axios'
+    ['@nuxtjs/axios'],
+    [
+      'nuxt-i18n',
+      {
+        locales: [
+          { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
+          { code: 'es', iso: 'es-CO', file: 'es.js', name: 'Spanish' }
+        ],
+        langDir: 'i18n/',
+        lazy: true,
+        defaultLocale: 'es',
+        vueI18n: { fallbackLocale: 'es' },
+        vuex: false
+      }
+    ]
   ],
   /*
    ** Axios module configuration
