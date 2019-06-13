@@ -38,5 +38,10 @@ export default {
   university2: 'SERVICIO NACIONAL DE APRENDIZAJE',
   portfolio: 'Portafolio',
   myWork: 'MI TRABAJO',
-  profilePicture: 'Foto de perfil'
+  profilePicture: 'Foto de perfil',
+  github: 'Visita mi perfil de GitHub',
+  twitter: 'Visita mi perfil de Twitter',
+  skype: 'Llámame en Skype',
+  linkedin: 'Visita mi perfil de Linkedin',
+  whatsapp: 'Envíame un mensaje en Whatsapp'
 }

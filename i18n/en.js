@@ -38,5 +38,10 @@ export default {
   university2: 'NATIONAL LEARNING SERVICE',
   portfolio: 'Portfolio',
   myWork: 'MY WORK',
-  profilePicture: 'Profile Picture'
+  profilePicture: 'Profile Picture',
+  github: 'Visit my GitHub profile',
+  twitter: 'Visit my Twitter profile',
+  skype: 'Call me on Skype',
+  linkedin: 'Visit my Linkedin profile',
+  whatsapp: 'Send me a message on Whatsapp'
 }
