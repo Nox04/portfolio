@@ -14,13 +14,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
+    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
 
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#00adb5' },
 
   /*
    ** Global CSS
@@ -78,5 +79,9 @@ export default {
         })
       }
     }
+  },
+  manifest: {
+    name: 'Nox',
+    lang: 'es-CO'
   }
 }

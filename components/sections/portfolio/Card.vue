@@ -4,7 +4,7 @@
     <div class="card-block">
       <img
         class="panel-profile-img rounded-circle"
-        src="/images/tempo_icon.png"
+        src="/images/tempo_icon.jpg"
         alt="Logo"
       />
       <p class="author-title"><strong>Proyecto: </strong> Tempo</p>
@@ -22,7 +22,7 @@
 
 <style type="text/css" scoped>
 .heading-footer {
-  background-image: url(/images/tempo.png);
+  background-image: url(/images/tempo.jpg);
   background-size: cover;
   height: 175px;
   -webkit-box-shadow: none;
