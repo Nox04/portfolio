@@ -11,7 +11,7 @@
 <script>
 import Footer from '~/components/layout/Footer'
 import Intro from '~/components/sections/intro/Intro'
-import About from '~/components/sections/About'
+import About from '~/components/sections/about/About'
 import Experience from '~/components/sections/Experience'
 import Portfolio from '~/components/sections/Portfolio'
 import Education from '~/components/sections/Education'
