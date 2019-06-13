@@ -35,5 +35,7 @@ export default {
   degree1: 'COMPUTER SCIENCE',
   degree2: 'ANALYSIS AND DEVELOPMENT OF INFORMATION SYSTEMS',
   university1: 'POPULAR UNIVERSITY OF CESAR',
-  university2: 'NATIONAL LEARNING SERVICE'
+  university2: 'NATIONAL LEARNING SERVICE',
+  portfolio: 'Portfolio',
+  myWork: 'MY WORK'
 }

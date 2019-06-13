@@ -35,5 +35,7 @@ export default {
   degree1: 'INGENIERÍA DE SISTEMAS',
   degree2: 'ANÁLISIS Y DESARROLLO DE SISTEMAS DE INFORMACIÓN',
   university1: 'UNIVERSIDAD POPULAR DEL CESAR',
-  university2: 'SERVICIO NACIONAL DE APRENDIZAJE'
+  university2: 'SERVICIO NACIONAL DE APRENDIZAJE',
+  portfolio: 'Portafolio',
+  myWork: 'MI TRABAJO'
 }
