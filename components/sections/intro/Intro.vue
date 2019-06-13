@@ -14,14 +14,16 @@
             <h2>
               <b>Juan David Angarita</b>
             </h2>
-            <h4 class="font-yellow">Full Stack Developer</h4>
+            <h4 class="font-yellow">Desarrollador Full Stack</h4>
             <ul class="information margin-tb-30">
-              <li><b class="font-yellow">NACIMIENTO</b> : Abril 11, 1992</li>
+              <li>
+                <b class="font-yellow">NACIMIENTO</b> : Abril 11, 1992 (27 años)
+              </li>
               <li>
                 <b class="font-yellow">EMAIL</b> : juan.angarita.11@gmail.com
               </li>
-              <li><b class="font-yellow">NACIONALIDAD</b> : Colombiano</li>
               <li><b class="font-yellow">NICKNAME</b> : Nox</li>
+              <li><b class="font-yellow">OS</b> : Linux</li>
             </ul>
             <ul class="social-icons">
               <li>

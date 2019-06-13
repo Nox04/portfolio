@@ -14,76 +14,54 @@
         </div>
         <!-- col-sm-3 -->
         <div class="col-sm-12 col-md-9">
-          <p class="margin-b-50">
+          <p class="margin-b-30">
             Desarrollador de Software Fullstack, con amplios conocimientos en
-            diversas plataformas y más de 8 años de experiencia,
-            amante de la tecnología,
-            innovador y en proceso constante de actualización.
-            Especializado en la programación web
-            y móvil usando los tecnologías.
+            diversas plataformas y más de 8 años de experiencia, amante de la
+            tecnología, innovador y en proceso constante de actualización.
+            Usuario y contribuidor activo de tecnologías libres (Linux, laravel,
+            vue, etc), con un sentido sólido del deber, la responsabilidad y el
+            trabajo en equipo.
+          </p>
+          <p class="margin-b-50">
+            Especializado en programación web y móvil usando las tecnologías:
           </p>
           <div class="row">
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <vue-circle
-                :progress="95"
-                :size="120"
-                :fill="fill"
-                insert-mode="append"
-                :start-angle="0"
-                :show-percent="true"
-                @vue-circle-progress="progress"
-                @vue-circle-end="progress_end"
-              >
-                <p class="progress-title">PHP</p>
-              </vue-circle>
+            <div class="col-xs-6 col-md-6 col-lg-2 text-center">
+              <spinner :progress="93">
+                <p class="progress-title">Laravel</p>
+              </spinner>
             </div>
             <!-- col-sm-6-->
 
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <vue-circle
-                :progress="85"
-                :size="120"
-                :fill="fill"
-                insert-mode="append"
-                :start-angle="0"
-                :show-percent="true"
-                @vue-circle-progress="progress"
-                @vue-circle-end="progress_end"
-              >
+            <div class="col-xs-6 col-md-6 col-lg-2 text-center">
+              <spinner :progress="91">
+                <p class="progress-title">Vue.js</p>
+              </spinner>
+            </div>
+
+            <div class="col-xs-6 col-md-6 col-lg-2 text-center">
+              <spinner :progress="85">
+                <p class="progress-title">R. Native</p>
+              </spinner>
+            </div>
+
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+              <spinner :progress="84">
                 <p class="progress-title">Java</p>
-              </vue-circle>
+              </spinner>
             </div>
             <!-- col-sm-6-->
 
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <vue-circle
-                :progress="75"
-                :size="120"
-                :fill="fill"
-                insert-mode="append"
-                :start-angle="0"
-                :show-percent="true"
-                @vue-circle-progress="progress"
-                @vue-circle-end="progress_end"
-              >
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+              <spinner :progress="70">
                 <p class="progress-title">Kotlin</p>
-              </vue-circle>
+              </spinner>
             </div>
-            <!-- col-sm-6-->
 
-            <div class="col-sm-6 col-md-6 col-lg-3">
-              <vue-circle
-                :progress="85"
-                :size="120"
-                :fill="fill"
-                insert-mode="append"
-                :start-angle="0"
-                :show-percent="true"
-                @vue-circle-progress="progress"
-                @vue-circle-end="progress_end"
-              >
-                <p class="progress-title">Java</p>
-              </vue-circle>
+            <div class="col-sm-6 col-md-6 col-lg-2 text-center">
+              <spinner :progress="55">
+                <p class="progress-title">C++</p>
+              </spinner>
             </div>
             <!-- col-sm-6-->
           </div>
@@ -97,24 +75,11 @@
   </section>
 </template>
 <script>
-import VueCircle from 'vue2-circle-progress/src/index.vue'
+import Spinner from './Spinner'
 
 export default {
   components: {
-    VueCircle
-  },
-  data() {
-    return {
-      fill: '#ffa804'
-    }
-  },
-  methods: {
-    progress(event, progress, stepValue) {
-      // console.log(stepValue)
-    },
-    progress_end(event) {
-      // console.log("Circle progress end");
-    }
+    Spinner
   }
 }
 </script>
