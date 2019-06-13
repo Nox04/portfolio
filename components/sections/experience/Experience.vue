@@ -5,10 +5,10 @@
         <div class="col-sm-12 col-md-3">
           <div class="heading">
             <h3>
-              <b>Exp. Laboral</b>
+              <b>{{ $t('workExperience') }}</b>
             </h3>
             <h6 class="font-lite-black">
-              <b>TRABAJOS PREVIOS</b>
+              <b>{{ $t('previousJobs') }}</b>
             </h6>
           </div>
         </div>
@@ -16,30 +16,26 @@
 
         <div class="col-sm-12 col-md-9">
           <previous-job
-            job="DESARROLLADOR FULL STACK"
+            :job="$t('fullStack').toUpperCase()"
             employer="ORION SOLUTIONS"
-            dates="OCTUBRE 2017 - PRESENTE (2 años)"
+            :dates="$t('date1')"
             :activities="[
-              'Desarrollador de aplicaciones móviles usando Android nativo y React native.',
-              'Desarrollador de firmware para dispositivos linux usando Java, Kotlin y C++.',
-              'Desarrollador backend usando PHP, Laravel y Postgresql.'
+              $t('mobileExperience'),
+              $t('firmwareExperience'),
+              $t('backEndExperience')
             ]"
           />
           <previous-job
-            job="DESARROLLADOR BACK END"
+            :job="$t('backEnd').toUpperCase()"
             employer="ESISTEL"
-            dates="ENERO 2014 - DICIEMBRE 2016 (3 años)"
-            :activities="[
-              'Desarrollador backend usando PHP, Laravel y Postgresql.'
-            ]"
+            :dates="$t('date2')"
+            :activities="[$t('backEndExperience')]"
           />
           <previous-job
-            job="DESARROLLADOR FULL STACK"
+            :job="$t('fullStack').toUpperCase()"
             employer="GIMSABER"
-            dates="FEBRERO 2011 - DICIEMBRE 2013 (3 años)"
-            :activities="[
-              'Desarrollador backend usando PHP, Laravel y Postgresql.'
-            ]"
+            :dates="$t('date3')"
+            :activities="[$t('backEndExperience')]"
           />
         </div>
         <!-- col-sm-9 -->

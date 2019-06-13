@@ -5,10 +5,10 @@
         <div class="col-sm-12 col-md-3">
           <div class="heading">
             <h3>
-              <b>Educación</b>
+              <b>{{ $t('education') }}</b>
             </h3>
             <h6 class="font-lite-black">
-              <b>CARRERA ACADÉMICA</b>
+              <b>{{ $t('academicCareer') }}</b>
             </h6>
           </div>
         </div>
@@ -17,16 +17,16 @@
         <div class="col-sm-12 col-md-9">
           <div class="education-wrapper">
             <education-item
-              title="INGENIERÍA DE SISTEMAS"
-              institution="UNIVERSIDAD POPULAR DEL CESAR"
-              date="Finalizado en el año 2013"
-              info="Finalizada en tres años por homologación de título anterior."
+              :title="$t('degree1')"
+              :institution="$t('university1')"
+              :date="$t('educationDate1')"
+              :info="$t('info1')"
             />
             <education-item
-              title="ANÁLISIS Y DESARROLLO DE SISTEMAS DE INFORMACIÓN"
-              institution="SERVICIO NACIONAL DE APRENDIZAJE"
-              date="Finalizado en el año 2009"
-              info="Exonerado por suficiencia y buenos resultados."
+              :title="$t('degree2')"
+              :institution="$t('university2')"
+              :date="$t('educationDate2')"
+              :info="$t('info2')"
             />
           </div>
           <!-- education-wrapper -->
