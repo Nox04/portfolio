@@ -10,4 +10,5 @@
 @import '~/static/css/ionicons.css';
 @import '~/static/css/responsive.css';
 @import '~/static/css/styles.css';
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 </style>

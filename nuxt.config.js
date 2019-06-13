@@ -10,6 +10,7 @@ export default {
     title: pkg.name,
     meta: [
       { charset: 'utf-8' },
+      { name: 'theme-color', content: '#081c3a' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
