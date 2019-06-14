@@ -46,8 +46,8 @@ const config: NuxtConfiguration = {
       'nuxt-i18n',
       {
         locales: [
-          { code: 'en', iso: 'en-US', file: 'en.js', name: 'English' },
-          { code: 'es', iso: 'es-CO', file: 'es.js', name: 'Spanish' }
+          { code: 'en', iso: 'en-US', file: 'en.ts', name: 'English' },
+          { code: 'es', iso: 'es-CO', file: 'es.ts', name: 'Spanish' }
         ],
         langDir: 'i18n/',
         lazy: true,
