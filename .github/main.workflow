@@ -5,4 +5,5 @@ workflow "Test and build on push" {
 
 action "JasonEtco/npm-audit-fix-action" {
   uses = "JasonEtco/npm-audit-fix-action@master"
+  secrets = ["GITHUB_TOKEN"]
 }
