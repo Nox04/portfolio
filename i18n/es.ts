@@ -43,5 +43,7 @@ export default {
   twitter: 'Visita mi perfil de Twitter',
   skype: 'Llámame en Skype',
   linkedin: 'Visita mi perfil de Linkedin',
-  whatsapp: 'Envíame un mensaje en Whatsapp'
+  whatsapp: 'Envíame un mensaje en Whatsapp',
+  gbFlag: 'Bandera de Gran Bretaña',
+  coFlag: 'Bandera de Colombia'
 }
