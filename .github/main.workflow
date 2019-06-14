@@ -5,5 +5,5 @@ workflow "Test and build on push" {
 
 action "lint" {
   uses = "stefanoeb/eslint-action@master"
-  args = "--ext .ts,.js,.vue"
+  args = "'*/**/*.{js,ts,vue}' --ignore-path .gitignore"
 }
