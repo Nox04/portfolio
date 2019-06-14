@@ -148,6 +148,8 @@ b.max-bold{ font-weight: 700; }
 
 .s30 { font-size: 25px; }
 
+.flag { width: 30px; height: 68px; padding-top: 20px; margin-right: 3px;}
+
 .intro .social-icons > li > a{ height: 35px; line-height: 35px; width: 35px; border-radius: 20px;
 	overflow: hidden; z-index: 1; position: relative; margin: 0 5px 5px; text-align: center;
 	background: #393e46; color: #eeeeee; }
@@ -158,7 +160,6 @@ b.max-bold{ font-weight: 700; }
 	-webkit-transform: scale(0); transform: scale(0); }
 
 .intro .social-icons > li > a:hover:after{ -webkit-transform: scale(1); transform: scale(1); }
-
 
 .intro .downlad-btn{ padding: 15px 30px; border-radius: 4px; float: right; margin-top: 30px;
 	box-shadow: inset 0 0px 4px rgba(0,0,0,.3); background: rgb(0, 173, 181); color: #eeeeee;

@@ -4,22 +4,13 @@
       :to="switchLocalePath('es')"
       aria-label="Cambie el idioma a español"
     >
-      <country-flag country="co" size="normal" />
+      <span class="flag"><img src="/images/es-co-flag.jpg"/></span>
     </nuxt-link>
     <nuxt-link
       :to="switchLocalePath('en')"
       aria-label="Switch language to english"
     >
-      <country-flag country="gb" size="normal" />
+      <span class="flag"><img src="/images/en-gb-flag.jpg"/></span>
     </nuxt-link>
   </div>
 </template>
-<script>
-import CountryFlag from 'vue-country-flag'
-
-export default {
-  components: {
-    CountryFlag
-  }
-}
-</script>
