@@ -14,27 +14,36 @@
         </div>
         <div class="col-sm-12 col-md-9">
           <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <card />
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <card />
-            </div>
-            <div class="col-sm-12 col-md-12 col-lg-6">
-              <card />
-            </div>
+            <project-card
+              v-for="(project, index) in projects"
+              :key="index"
+              :project="project"
+            />
           </div>
         </div>
       </div>
     </div>
   </section>
 </template>
-<script>
-import Card from './Card'
+<script lang="ts">
+import { Component, Vue } from 'vue-property-decorator'
+import Project from '~/models/Project'
 
-export default {
+@Component({
   components: {
-    Card
+    ProjectCard: () => import('~/components/sections/portfolio/ProjectCard.vue')
   }
+})
+export default class Portfolio extends Vue {
+  projects: Project[] = [
+    {
+      title: 'Tempo',
+      stack: 'PHP, Laravel, Vue.js, Postgresql.',
+      link: 'https://demo.tempo.orioncol.com/login',
+      icon: '/images/tempo_icon.jpg',
+      background: '/images/tempo.jpg',
+      auth: { required: true, user: 'admin@orioncol.com', password: 'secret' }
+    }
+  ]
 }
 </script>
