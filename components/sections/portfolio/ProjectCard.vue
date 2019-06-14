@@ -11,17 +11,13 @@
         <p class="author-title">
           <strong>Proyecto: </strong> {{ project.title }}
         </p>
-        <p class="author-title"><strong>Stack:</strong>{{ project.stack }}</p>
-        <div v-if="project.auth.required">
-          <p class="author-title">
-            <strong>Usuario:</strong>{{ project.auth.user }}
-          </p>
-          <p class="author-title">
-            <strong>Contraseña:</strong>{{ project.auth.password }}
-          </p>
-        </div>
+        <p class="author-title"><strong>Stack:</strong> {{ project.stack }}</p>
+        <p class="author-title">
+          <strong>Descripción:</strong>
+          {{ project.description }}
+        </p>
         <p class="author-title font-yellow">
-          <a href="https://demo.tempo.orioncol.com/login" target="_blank">
+          <a :href="project.link" target="_blank" rel="noopener">
             Link Externo <i class="ion-android-open"></i>
           </a>
         </p>

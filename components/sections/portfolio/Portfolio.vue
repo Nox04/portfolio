@@ -28,6 +28,7 @@
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator'
 import Project from '~/models/Project'
+import Projects from '~/data/Projects'
 
 @Component({
   components: {
@@ -35,15 +36,6 @@ import Project from '~/models/Project'
   }
 })
 export default class Portfolio extends Vue {
-  projects: Project[] = [
-    {
-      title: 'Tempo',
-      stack: 'PHP, Laravel, Vue.js, Postgresql.',
-      link: 'https://demo.tempo.orioncol.com/login',
-      icon: '/images/tempo_icon.jpg',
-      background: '/images/tempo.jpg',
-      auth: { required: true, user: 'admin@orioncol.com', password: 'secret' }
-    }
-  ]
+  projects: Project[] = Projects
 }
 </script>
