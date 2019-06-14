@@ -1,6 +1,6 @@
 workflow "Test and build on push" {
   on = "push"
-  resolves = ["Build"]
+  resolves = ["JasonEtco/npm-audit-fix-action"]
 }
 
 action "JasonEtco/npm-audit-fix-action" {
