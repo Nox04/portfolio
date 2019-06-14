@@ -1,9 +1,9 @@
 workflow "Test and build on push" {
   on = "push"
-  resolves = ["gimenete/eslint-action"]
+  resolves = ["lint"]
 }
 
-action "gimenete/eslint-action" {
-  uses = "gimenete/eslint-action@master"
-  secrets = ["GITHUB_TOKEN"]
+action "lint" {
+  uses = "stefanoeb/eslint-action@master"
+  args = "--ext .ts,.js,.vue"
 }
