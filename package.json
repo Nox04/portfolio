@@ -9,20 +9,25 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "eslint --ext .ts,.js,.vue --ignore-path .gitignore .",
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.3.6",
     "@nuxtjs/pwa": "^3.0.0-beta.16",
     "cross-env": "^5.2.0",
+    "jquery-circle-progress": "^1.2.2",
+    "jquery-easing": "^0.0.1",
     "nuxt": "^2.4.0",
     "nuxt-i18n": "^5.12.4",
+    "ts-node": "^8.2.0",
     "vue-country-flag": "^1.1.1",
-    "vue2-circle-progress": "^1.2.3"
+    "vue-property-decorator": "^8.1.1"
   },
   "devDependencies": {
+    "@nuxt/typescript": "^2.8.1",
     "@nuxtjs/eslint-config": "^0.0.1",
+    "@typescript-eslint/eslint-plugin": "^1.10.2",
+    "@typescript-eslint/parser": "^1.10.2",
     "babel-eslint": "^10.0.1",
     "eslint": "^5.15.1",
     "eslint-config-prettier": "^4.1.0",

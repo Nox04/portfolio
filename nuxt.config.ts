@@ -1,18 +1,22 @@
-import pkg from './package'
+import NuxtConfiguration from '@nuxt/config'
 
-export default {
+const config: NuxtConfiguration = {
   mode: 'spa',
 
   /*
    ** Headers of the page
    */
   head: {
-    title: pkg.name,
+    title: process.env.npm_package_name,
     meta: [
       { charset: 'utf-8' },
       { name: 'theme-color', content: '#151515' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: pkg.description }
+      {
+        hid: 'description',
+        name: 'description',
+        content: process.env.npm_package_description || ''
+      }
     ],
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -37,8 +41,7 @@ export default {
    ** Nuxt.js modules
    */
   modules: [
-    ['@nuxtjs/axios'],
-    ['@nuxtjs/pwa'],
+    '@nuxtjs/pwa',
     [
       'nuxt-i18n',
       {
@@ -54,34 +57,11 @@ export default {
       }
     ]
   ],
-  /*
-   ** Axios module configuration
-   */
-  axios: {
-    // See https://github.com/nuxt-community/axios-module#options
-  },
 
-  /*
-   ** Build configuration
-   */
-  build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {
-      // Run ESLint on save
-      if (ctx.isDev && ctx.isClient) {
-        config.module.rules.push({
-          enforce: 'pre',
-          test: /\.(js|vue)$/,
-          loader: 'eslint-loader',
-          exclude: /(node_modules)/
-        })
-      }
-    }
-  },
   manifest: {
     name: 'Nox',
     lang: 'es-CO'
   }
 }
+
+export default config
