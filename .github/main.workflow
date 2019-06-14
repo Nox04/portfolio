@@ -1,9 +1,9 @@
 workflow "Test and build on push" {
   on = "push"
-  resolves = ["JasonEtco/npm-audit-fix-action"]
+  resolves = ["gimenete/eslint-action"]
 }
 
-action "JasonEtco/npm-audit-fix-action" {
-  uses = "JasonEtco/npm-audit-fix-action@master"
+action "gimenete/eslint-action" {
+  uses = "gimenete/eslint-action@master"
   secrets = ["GITHUB_TOKEN"]
 }
