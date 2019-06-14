@@ -5,4 +5,5 @@ workflow "Test and build on push" {
 
 action "lint" {
   uses = "gimenete/eslint-action@master"
+  secrets = ["GITHUB_TOKEN"]
 }
