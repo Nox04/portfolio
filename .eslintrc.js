@@ -19,6 +19,6 @@ module.exports = {
   ],
   // add your custom rules here
   rules: {
-    'nuxt/no-globals-in-created': 0
+    '@typescript-eslint/no-unused-vars': [2, { args: 'none' }]
   }
 }
