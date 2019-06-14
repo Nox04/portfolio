@@ -18,6 +18,23 @@
 </template>
 <script>
 export default {
-  props: ['job', 'employer', 'dates', 'activities']
+  props: {
+    job: {
+      type: String,
+      default: ''
+    },
+    employer: {
+      type: String,
+      default: ''
+    },
+    dates: {
+      type: String,
+      default: ''
+    },
+    activities: {
+      type: Array,
+      default: () => {}
+    }
+  }
 }
 </script>

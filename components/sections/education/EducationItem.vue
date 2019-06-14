@@ -16,6 +16,23 @@
 </template>
 <script>
 export default {
-  props: ['title', 'institution', 'date', 'info']
+  props: {
+    title: {
+      type: String,
+      default: ''
+    },
+    institution: {
+      type: String,
+      default: ''
+    },
+    date: {
+      type: String,
+      default: ''
+    },
+    info: {
+      type: String,
+      default: ''
+    }
+  }
 }
 </script>
