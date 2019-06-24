@@ -17,9 +17,7 @@
           {{ project.description }}
         </p>
         <p class="author-title font-yellow">
-          <a :href="project.link" target="_blank" rel="noopener">
-            Link Externo <i class="ion-android-open"></i>
-          </a>
+          <vue-pure-lightbox :images="project.images" />
         </p>
       </div>
     </div>
@@ -27,9 +25,14 @@
 </template>
 <script lang="ts">
 import { Component, Vue, Prop } from 'vue-property-decorator'
+import VuePureLightbox from './Lightbox.vue'
 import Project from '~/models/Project'
 
-@Component
+@Component({
+  components: {
+    VuePureLightbox
+  }
+})
 export default class ProjectCard extends Vue {
   @Prop({ type: Object, required: true }) project!: Project
   get background() {

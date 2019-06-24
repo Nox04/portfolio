@@ -4,7 +4,11 @@ const Projects: Project[] = [
   {
     title: 'Tempo.',
     stack: 'PHP, Laravel, Vue.js, Postgresql.',
-    link: 'https://orioncol.com/',
+    images: [
+      'http://bit.ly/2EjbImW',
+      'https://bit.ly/2rQZxUf',
+      'http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg'
+    ],
     icon: '/images/tempo_icon.jpg',
     background: '/images/tempo.jpg',
     description:
@@ -13,7 +17,7 @@ const Projects: Project[] = [
   {
     title: 'Venus.',
     stack: 'Java, Kotlin, C++.',
-    link: 'https://orioncol.com/',
+    images: ['https://orioncol.com/'],
     icon: '/images/venus_icon.jpg',
     background: '/images/venus.jpg',
     description:
@@ -22,7 +26,7 @@ const Projects: Project[] = [
   {
     title: 'Smartsoft.',
     stack: 'Java, Kotlin, Android.',
-    link: 'https://www.coasmedas.coop/index.php',
+    images: ['https://www.coasmedas.coop/index.php'],
     icon: '/images/smartsoft_icon.jpg',
     background: '/images/smartsoft.jpg',
     description:
@@ -31,7 +35,7 @@ const Projects: Project[] = [
   {
     title: 'InfoApp',
     stack: 'Typescript, Angular, Laravel.',
-    link: 'http://infoapp.com.co/',
+    images: ['http://infoapp.com.co/'],
     icon: '/images/infoapp_icon.jpg',
     background: '/images/infoapp.jpg',
     description:
@@ -40,7 +44,7 @@ const Projects: Project[] = [
   {
     title: 'Antares',
     stack: 'React Native, Vue.js, Laravel.',
-    link: 'https://antares.rigel.digital/',
+    images: ['https://antares.rigel.digital/'],
     icon: '/images/antares_icon.jpg',
     background: '/images/antares.jpg',
     description:
@@ -49,7 +53,7 @@ const Projects: Project[] = [
   {
     title: 'Visor neuronal',
     stack: 'Javascript, D3, Matlab.',
-    link: 'https://visor.nox.kim/',
+    images: ['https://visor.nox.kim/'],
     icon: '/images/visor_icon.jpg',
     background: '/images/visor.jpg',
     description:
@@ -58,7 +62,7 @@ const Projects: Project[] = [
   {
     title: 'Nemesis',
     stack: 'Java, Kotlin, Laravel.',
-    link: 'https://orioncol.com/',
+    images: ['https://orioncol.com/'],
     icon: '/images/nemesis_icon.jpg',
     background: '/images/nemesis.jpg',
     description:
@@ -67,7 +71,7 @@ const Projects: Project[] = [
   {
     title: 'Irene',
     stack: 'PHP, Laravel, jQuery.',
-    link: 'https://irene.digital/',
+    images: ['https://irene.digital/'],
     icon: '/images/irene_icon.jpg',
     background: '/images/irene.jpg',
     description:
@@ -76,7 +80,7 @@ const Projects: Project[] = [
   {
     title: 'Money',
     stack: 'React Native, Typescript, Firebase.',
-    link: 'https://antares.rigel.digital/',
+    images: ['https://antares.rigel.digital/'],
     icon: '/images/money_icon.jpg',
     background: '/images/money.jpg',
     description:
@@ -85,7 +89,7 @@ const Projects: Project[] = [
   {
     title: 'Festival Vallenato 2017',
     stack: 'Typescript, Ionic, Firebase.',
-    link: 'https://koulu.rigel.digital/',
+    images: ['https://koulu.rigel.digital/'],
     icon: '/images/festival_icon.jpg',
     background: '/images/festival.jpg',
     description:
@@ -94,7 +98,7 @@ const Projects: Project[] = [
   {
     title: 'Koulu',
     stack: 'Laravel, Blade, Mysql.',
-    link: 'https://koulu.rigel.digital/',
+    images: ['https://koulu.rigel.digital/'],
     icon: '/images/koulu_icon.jpg',
     background: '/images/koulu.jpg',
     description:
@@ -103,8 +107,7 @@ const Projects: Project[] = [
   {
     title: 'Life Support',
     stack: 'Typescript, Ionic 4, Firebase.',
-    link:
-      'https://play.google.com/store/apps/details?id=support.life.lifesupport',
+    images: ['https://play.google.com/store/apps/details'],
     icon: '/images/life_support_icon.jpg',
     background: '/images/life_support.jpg',
     description:
@@ -113,7 +116,7 @@ const Projects: Project[] = [
   {
     title: 'Halo',
     stack: 'Android Nativo, Realm, Java.',
-    link: 'https://orioncol.com/',
+    images: ['https://orioncol.com/'],
     icon: '/images/halo_icon.jpg',
     background: '/images/halo.jpg',
     description:
@@ -122,7 +125,7 @@ const Projects: Project[] = [
   {
     title: 'Woin',
     stack: 'React Native, Typescript, Mobx.',
-    link: 'https://woin.com.co/',
+    images: ['https://woin.com.co/'],
     icon: '/images/woin_icon.jpg',
     background: '/images/woin.jpg',
     description:
@@ -131,7 +134,7 @@ const Projects: Project[] = [
   {
     title: 'Brakapp',
     stack: 'Typescript, Laravel, Ionic.',
-    link: 'https://brakapp.com/',
+    images: ['https://brakapp.com/'],
     icon: '/images/brakapp_icon.jpg',
     background: '/images/brakapp.jpg',
     description:
@@ -140,7 +143,7 @@ const Projects: Project[] = [
   {
     title: 'Merkapp',
     stack: 'React Native, Typescript, Redux.',
-    link: 'https://merkapp.com.co/',
+    images: ['https://merkapp.com.co/'],
     icon: '/images/merkapp_icon.jpg',
     background: '/images/merkapp.jpg',
     description:
