@@ -36,7 +36,11 @@
             <social-icons />
           </div>
           <div class="col-sm-10 col-md-3 col-lg-3">
-            <a class="downlad-btn" href="#">
+            <a
+              class="downlad-btn"
+              href="/documents/CV-Juan-David-Angarita.pdf"
+              download
+            >
               <i class="ion-ios-cloud-download-outline s30"></i>
               {{ $t('download') }}
             </a>
