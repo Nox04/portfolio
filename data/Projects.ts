@@ -5,14 +5,46 @@ const Projects: Project[] = [
     title: 'Tempo.',
     stack: 'PHP, Laravel, Vue.js, Postgresql.',
     images: [
-      'http://bit.ly/2EjbImW',
-      'https://bit.ly/2rQZxUf',
-      'http://r.ddmcdn.com/s_f/o_1/cx_462/cy_245/cw_1349/ch_1349/w_720/APL/uploads/2015/06/caturday-shutterstock_149320799.jpg'
+      '/images/tempo/1.png',
+      '/images/tempo/2.png',
+      '/images/tempo/3.png',
+      '/images/tempo/4.png',
+      '/images/tempo/5.png'
     ],
     icon: '/images/tempo_icon.jpg',
     background: '/images/tempo.jpg',
     description:
       'Plataforma web para control de tiempos y asistencia de empleados. Con visualización en tiempo real, configuración remota de terminales y enrolamiento biométrico desde el navegador.'
+  },
+  {
+    title: 'Antares',
+    stack: 'React Native, Vue.js, Laravel.',
+    images: [
+      '/images/antares/1.png',
+      '/images/antares/2.png',
+      '/images/antares/3.png',
+      '/images/antares/4.png',
+      '/images/antares/5.png'
+    ],
+    icon: '/images/antares_icon.jpg',
+    background: '/images/antares.jpg',
+    description:
+      'Desarrollo de aplicación móvil y backend para rastreo de trabajadores en empresas de domicilios. Con garantía de Real-time, background GPS y manipulación de masiva cantidad de datos.'
+  },
+  {
+    title: 'Smartsoft.',
+    stack: 'Java, Kotlin, Android.',
+    images: [
+      '/images/smartsoft/1.png',
+      '/images/smartsoft/2.png',
+      '/images/smartsoft/3.png',
+      '/images/smartsoft/4.png',
+      '/images/smartsoft/5.png'
+    ],
+    icon: '/images/smartsoft_icon.jpg',
+    background: '/images/smartsoft.jpg',
+    description:
+      'Desarrollo de aplicación móvil para enrolamiento y verificación biométrica de clientes bancarios. Integrando lector de huellas Morpho, lectura de PDF417 y captura de datos faciales.'
   },
   {
     title: 'Venus.',
@@ -24,15 +56,6 @@ const Projects: Project[] = [
       'Desarrollo de firmware para terminal fija de marcación de tiempos, asistencia y control de accesos. Con sensor biométrico integrado, sincronización en tiempo real y funcionamiento offline.'
   },
   {
-    title: 'Smartsoft.',
-    stack: 'Java, Kotlin, Android.',
-    images: ['https://www.coasmedas.coop/index.php'],
-    icon: '/images/smartsoft_icon.jpg',
-    background: '/images/smartsoft.jpg',
-    description:
-      'Desarrollo de aplicación móvil para verificación biométrica. Integrando lector de huellas, lectura de PDF417 y captura de datos faciales.'
-  },
-  {
     title: 'InfoApp',
     stack: 'Typescript, Angular, Laravel.',
     images: ['http://infoapp.com.co/'],
@@ -40,15 +63,6 @@ const Projects: Project[] = [
     background: '/images/infoapp.jpg',
     description:
       'Desarrollo de aplicación móvil turística, landing page y backend. Seleccionada como la aplicación oficial de turismo y reservas para la JMJ 2019 Panamá.'
-  },
-  {
-    title: 'Antares',
-    stack: 'React Native, Vue.js, Laravel.',
-    images: ['https://antares.rigel.digital/'],
-    icon: '/images/antares_icon.jpg',
-    background: '/images/antares.jpg',
-    description:
-      'Desarrollo de aplicación móvil y backend para rastreo de trabajadores en empresas de domicilios. Con garantía de Real-time, background GPS y manipulación de masiva cantidad de datos.'
   },
   {
     title: 'Visor neuronal',
