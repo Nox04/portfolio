@@ -35,16 +35,16 @@ export default {
     percentFontSize: {
       type: String,
       required: false,
-      default: function() {
+      default() {
         return (this.size / 4).toString() + 'px'
       }
     },
     animation: {
       required: false,
-      default: function() {
+      default() {
         return { duration: 1200, easing: 'circleProgressEasing' }
       },
-      validator: function(value) {
+      validator(value) {
         return value instanceof Object || value === false
       }
     },
@@ -117,7 +117,7 @@ export default {
       }
     }
   },
-  beforeDestroy: function() {
+  beforeDestroy() {
     $(this.$el).remove()
   },
   methods: {
@@ -129,7 +129,7 @@ export default {
         $(this.$el).circleProgress('value', this.convertedProgress(value))
       }
     },
-    updateFill: function(fill) {
+    updateFill(fill) {
       const circle = $(this.$el).data('circle-progress')
       circle.fill = fill
       circle.initFill()
