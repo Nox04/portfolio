@@ -18,19 +18,19 @@
           <p class="margin-b-50">{{ $t('bio2') }}</p>
           <div class="row">
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="93">
+              <spinner :progress="94">
                 <p class="progress-title">Laravel</p>
               </spinner>
             </div>
 
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="91">
+              <spinner :progress="92">
                 <p class="progress-title">Vue.js</p>
               </spinner>
             </div>
 
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="85">
+              <spinner :progress="87">
                 <p class="progress-title">R. Native</p>
               </spinner>
             </div>
@@ -52,6 +52,14 @@
                 <p class="progress-title">C++</p>
               </spinner>
             </div>
+          </div>
+          <h4 class="margin-b-30">{{ $t('currentlyLearning') }}</h4>
+          <div class="experience">
+            <ul class="list">
+              <li>{{ $t('learning1') }}</li>
+              <li>{{ $t('learning2') }}</li>
+              <li>{{ $t('learning3') }}</li>
+            </ul>
           </div>
           <!-- row -->
         </div>

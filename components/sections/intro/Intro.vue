@@ -31,7 +31,7 @@
                 </a>
               </li>
               <li><b class="font-yellow">NICKNAME</b> : Nox</li>
-              <li><b class="font-yellow">OS</b> : Linux</li>
+              <li><b class="font-yellow">OS</b> : Linux / OSX</li>
             </ul>
             <social-icons />
           </div>

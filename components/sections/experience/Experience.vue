@@ -17,6 +17,18 @@
         <div class="col-sm-12 col-md-9">
           <previous-job
             :job="$t('fullStack').toUpperCase()"
+            employer="Nucleus Studio"
+            :dates="$t('date5')"
+            :activities="[$t('backEndExperience'), $t('frontEndExperience')]"
+          />
+          <previous-job
+            :job="$t('mobile').toUpperCase()"
+            employer="Vendty"
+            :dates="$t('date4')"
+            :activities="[$t('mobileExperience2')]"
+          />
+          <previous-job
+            :job="$t('fullStack').toUpperCase()"
             employer="ORION SOLUTIONS"
             :dates="$t('date1')"
             :activities="[

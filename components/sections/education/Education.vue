@@ -20,13 +20,11 @@
               :title="$t('degree1')"
               :institution="$t('university1')"
               :date="$t('educationDate1')"
-              :info="$t('info1')"
             />
             <education-item
               :title="$t('degree2')"
               :institution="$t('university2')"
               :date="$t('educationDate2')"
-              :info="$t('info2')"
             />
           </div>
           <!-- education-wrapper -->

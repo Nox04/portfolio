@@ -7,7 +7,7 @@
             <i class="icon ion-ios-location-outline"></i>
             <div class="right-area">
               <h5>{{ $t('address') }}</h5>
-              <h5>VALLEDUPAR, CO</h5>
+              <h5>BOGOTÁ, CO</h5>
             </div>
           </a>
         </div>
