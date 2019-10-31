@@ -10,6 +10,21 @@ install:
 script:
 - yarn run lint
 - yarn run generate
-before_install:
+before_deploy:
 - openssl aes-256-cbc -K $encrypted_652f2aa5a98a_key -iv $encrypted_652f2aa5a98a_iv
-  -in deploy_rsa.enc -out deploy_rsa -d
+  -in deploy_rsa.enc -out /tmp/deploy_rsa -d
+- eval "$(ssh-agent -s)"
+- chmod 600 /tmp/deploy_rsa
+- ssh-add /tmp/deploy_rsa
+- echo -e "Host ${DEPLOY_HOST}\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+deploy:
+  provider: script
+  skip-cleanup: true
+  script: rsync -r --quiet --delete-after ${TRAVIS_BUILD_DIR}/dist/* ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_DIRECTORY}
+  on:
+    branch: master
+env:
+  global:
+  - secure: a8RIbB5qN0dnJ7ZpRE8+U4s9UfhM156qmUxXDYpRbQh3/7bBLdeeQk1QbYLX8lR/w4BEboXQ4gBf4B/a9GYL6/THQzEof9hX17iZijIcxsGRhnPY8c77nvjCYbFc5PEk7sh/y/ZTKOEAqTj1qoRIGynhjmq7xR4yUpDowsJkYTra7ZD8G2UU9MRb34o+S3Vh8UR83MYHFz4EUxwhMc2T+L/mZJwNzkxCEHPBNIxLUmv0IIFa5dFr0UNF3DWrbCY+N7aSmKwuKUuXcxix+8B9wxOuZ0Dqitqmrn0/gGBxJFYAARCgzw2HO2pFyd58tDK4+xqXOj1BwWPGWiaUvWy7/TM0IAcaP7d5XR1XQh34Ymb0c0DAMS3Z0t4bGt5xk25CYPEZtvIbyXvQrvfeY31PQVkUQZw2W+GHTakstdjfmTTo4Lg+J99e+CXDhHBUvU/Hdv2A0HOY+dymFWT3nfWEiR7f/dhspYLbAXgnEiigi9V3j4Yd6skbw7pRaGLZruODdk25W+4QCi+H93Ve49eSjePA8uFck3kbU5sRjxqTnB2GN235FlTypZr5kiZGato4sY6iS75RJQfrQ88vIQ6uSqs6CVrSfc7D90+1rmejem3RuRrtIJU+qDIO8xpolyRfYIRoKGq1DFiywm7a2J9+aHebGJqDNLdEGG07/rIwirk=
+  - secure: rHpf+0VmCREdALo1mNU6nGoNJyFSfVvSKb2EyWU3/A9LdnKaPItabwzV/WEjk+eHEogaRKMeJIu16bi4XXeFAX2G5eFJzseHGGpMKmz3Yp/8A6HVLsDuQzebjbt2ACb92MPJtddKeRq1WSIG/RLizx0Xrr+6SLBcSCQBe/eiyhUhHynlrtfohnvTJPDrSf/s57orEd9dEHwqaRBSFi4/Yg53IYEENrCkxqHwVIPP0dut+oQ45VCHKEg0Ibtrd19KniHELY6v6g6zqbSkG4XVVsznXV8fcdcNNgnUle5qtv3+V+fgjCnfMONagjNDpA07nU766yWYORS1CGLr64nD1ml2vXSN+olN/fFrDqLc1sWYxF27jVSqfUl8P+n/d4ZGVksosHY5+wyjQgiY6To7MDPRZHz7R9A/PO/uztY/IdwpUy3L3UJVdJ4GJp6W4yRrM1yuYZ/lGO36FPdirqVG23uRI080ms8pcbUbvFvQ4x6Bujywtubb0cQVfzl6lmRAXv8Rd6k5I9rp2wy0B+TPFpB3ncNzxSJFgR0QNP8/2UEc6E3Vy1EDoVd7NlPQwIM79IvwSMbfltzD9x+szHLNRfs8vvO5UYbuPYBWxZTb759BCxjeGoZ4N4qIoaoIbaeGvuRPo3S7Bv9Djy9zZSyORp+WewrIuD9tOukExXDkSwM=
+  - secure: q+5IsFZ1lKW45pthMrZBiMV8B5ivgF6JCOxq0cvLBBs/6vfd+5RtQDNht8gKgiObRzMlo1avIHXOCZPHIT7Ettgt3ty0TsAxvtmyvIS0/7nhFaO7WnQqiaUgk+BcJglGTY3eeFkQrYtTnRcUs+L9juScxecblcmcMmq/Ct95yAt2onOQWmVtpRB3KGUNArOtSVVWs+bZNhP4SFy8FCk82TedOmfzVPxAz2EcuvUCl2RifI6SE1sZEfBMY4LDz0kQfs6/w9ywYeCfau+69g3YQFPGXEO7A+lNHi+d7VdRDAKwkE/Z5ZbLob149bCOYwsiQb24vfQAh3cHDwj5wwOwdN4B0Wl3E6cHB4c/Z9kYqkhu/s16alERSTKDrNBT1kRX9/enymh10HWQKc71yq7wja9fuY8TBFhYKnsvQgrxFGJ8Z1Guh2RSjC1MnQSXBwoh5UBl/yKLrqEAPW3hKRsYYdcci/HjN4xlv4Z0DyAOUNpK6mWnt+Rp5fcqfHPBY7hyUoaPiGqJezL1g2HGvIy66Zci9qL88YwzyOy+XaI+8kfyGbnQRTsRFFzMb74TnbQGFrGYL4nAZBgGT6SIz9e2OEnC2urQ61ZNmn8S2Mliwph77Gxblif1+ZRVV8VwNjD0Qg3JhdEVaaLCASGiAa2OyMxFK5kOzvZ0sigkHfh76as=
