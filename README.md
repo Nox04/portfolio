@@ -2,6 +2,8 @@
 
 > My personal portfolio
 
+[![Build Status](https://travis-ci.org/Nox04/portfolio.svg?branch=master)](https://travis-ci.org/Nox04/portfolio)
+
 ``` bash
 # install dependencies
 $ yarn install
