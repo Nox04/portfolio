@@ -1,6 +1,6 @@
-import NuxtConfiguration from '@nuxt/config'
+import { Configuration } from '@nuxt/types'
 
-const config: NuxtConfiguration = {
+const config: Configuration = {
   mode: 'spa',
 
   /*
@@ -21,6 +21,8 @@ const config: NuxtConfiguration = {
     noscript: [{ innerHTML: 'This website requires JavaScript.' }],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
+
+  buildModules: ['@nuxt/typescript-build'],
 
   /*
    ** Customize the progress-bar color
