@@ -2,9 +2,6 @@
 
 > My personal portfolio
 
-## Build Setup
-[![Build Status](https://img.shields.io/endpoint.svg?url=https%3A%2F%2Factions-badge.atrox.dev%2Fnox04%2Fportfolio%2Fbadge&style=flat)](https://actions-badge.atrox.dev/nox04/portfolio/goto)
-
 ``` bash
 # install dependencies
 $ yarn install
