@@ -1,9 +1,17 @@
 <template>
   <div>
     <nuxt />
+    <my-footer />
   </div>
 </template>
-
+<script>
+import Footer from '~/components/layout/Footer'
+export default {
+  components: {
+    'my-footer': Footer
+  }
+}
+</script>
 <style lang="scss">
 @import '~/static/css/bootstrap.css';
 @import '~/static/css/ionicons.css';

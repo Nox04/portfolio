@@ -53,8 +53,8 @@ const config: Configuration = {
         ],
         langDir: 'i18n/',
         lazy: true,
-        defaultLocale: 'es',
-        vueI18n: { fallbackLocale: 'es' },
+        defaultLocale: 'en',
+        vueI18n: { fallbackLocale: 'en' },
         vuex: false
       }
     ]

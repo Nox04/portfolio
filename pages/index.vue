@@ -5,11 +5,9 @@
     <experience-section />
     <portfolio-section />
     <education-section />
-    <my-footer />
   </div>
 </template>
 <script>
-import Footer from '~/components/layout/Footer'
 import Intro from '~/components/sections/intro/Intro'
 import About from '~/components/sections/about/About'
 import Experience from '~/components/sections/experience/Experience'
@@ -18,7 +16,6 @@ import Education from '~/components/sections/education/Education'
 
 export default {
   components: {
-    'my-footer': Footer,
     'intro-section': Intro,
     'about-section': About,
     'experience-section': Experience,
