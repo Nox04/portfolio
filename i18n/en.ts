@@ -7,7 +7,7 @@ export default {
   backEnd: 'Backend Developer',
   mobile: 'Mobile Developer',
   born: 'BORN',
-  bornDate: 'April 11, 1992 (27)',
+  bornDate: 'April 11, 1992',
   aboutMe: 'About me',
   professionalPath: 'PROFESSIONAL PATH',
   bio: `Full Stack developer, with extensive knowledge in
@@ -18,9 +18,9 @@ export default {
   teamwork.`,
   bio2: 'Specialized in web and mobile development using technologies like:',
   currentlyLearning: 'Currently learning:',
-  learning1: 'Nodejs',
+  learning1: 'Flutter',
   learning2: 'Nest.js',
-  learning3: 'Advanced English',
+  learning3: 'State Machines (xState)',
   workExperience: 'Work Experience',
   previousJobs: 'PREVIOUS JOBS',
   date1: 'OCTOBER 2017 - JUNE 2019 (2 years)',
@@ -29,7 +29,7 @@ export default {
   date4: 'JUNE 2019 - AUGUST 2019 (2 months)',
   date5: 'SEPTEMBER 2019 - PRESENT',
   backEndExperience: 'Backend developer using PHP, Laravel and Postgresql.',
-  frontEndExperience: 'Frontend developer using Vue.js and Nuxt.',
+  frontEndExperience: 'Frontend developer using Vue.js, React and Nuxt.',
   firmwareExperience:
     'Embedded linux devices firmware developer using Java, Kotlin and C++.',
   mobileExperience:

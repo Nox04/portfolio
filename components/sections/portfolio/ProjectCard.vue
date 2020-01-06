@@ -17,7 +17,8 @@
           {{ project.description }}
         </p>
         <p class="author-title font-yellow">
-          <vue-pure-lightbox :images="project.images" />
+          <vue-pure-lightbox v-if="shouldRedirect" :images="project.images" />
+          <a v-else :href="project.images[0]" target="_blank">Ver más</a>
         </p>
       </div>
     </div>
@@ -37,6 +38,9 @@ export default class ProjectCard extends Vue {
   @Prop({ type: Object, required: true }) project!: Project
   get background() {
     return `background-image: url(${this.project.background});`
+  }
+  get shouldRedirect() {
+    return this.project.images.length > 1
   }
 }
 </script>

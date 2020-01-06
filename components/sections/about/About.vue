@@ -30,8 +30,8 @@
             </div>
 
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="87">
-                <p class="progress-title">R. Native</p>
+              <spinner :progress="90">
+                <p class="progress-title">React</p>
               </spinner>
             </div>
 
@@ -40,16 +40,14 @@
                 <p class="progress-title">Java</p>
               </spinner>
             </div>
-
+            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
+              <spinner :progress="75">
+                <p class="progress-title">NodeJS</p>
+              </spinner>
+            </div>
             <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
               <spinner :progress="70">
                 <p class="progress-title">Kotlin</p>
-              </spinner>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="55">
-                <p class="progress-title">C++</p>
               </spinner>
             </div>
           </div>

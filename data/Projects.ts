@@ -2,6 +2,24 @@ import Project from '~/models/Project'
 
 const Projects: Project[] = [
   {
+    title: 'FanFood.',
+    stack: 'Typescript, React.',
+    images: ['https://order.fanfoodapp.com/'],
+    icon: '/images/fanfood_icon.jpg',
+    background: '/images/fanfood.jpg',
+    description:
+      'Aplicación web para hacer pedidos en estadios, teatros y salones de eventos sin que tengas que moverte de tu puesto. Desarrollo de la Progressive Web Application (PWA).'
+  },
+  {
+    title: 'Vendty.',
+    stack: 'PHP, Laravel, Vue.js, React Native.',
+    images: ['https://vendty.com/'],
+    icon: '/images/vendty_icon.png',
+    background: '/images/vendty.jpg',
+    description:
+      'Sistema POS online para empresas de cualquier escala. Ventas, facturación electrónica, inventarios, proveedores, bancos, reportes, tomapedidos, comandas, etc.'
+  },
+  {
     title: 'Tempo.',
     stack: 'PHP, Laravel, Vue.js, Postgresql.',
     images: [

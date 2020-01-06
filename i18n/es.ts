@@ -6,7 +6,7 @@ export default {
   fullStack: 'Desarrollador Full Stack',
   backEnd: 'Desarrollador Backend',
   born: 'NACIMIENTO',
-  bornDate: 'Abril 11, 1992 (27 años)',
+  bornDate: 'Abril 11, 1992',
   aboutMe: 'Sobre mí',
   professionalPath: 'TRAYECTORIA PROFESIONAL',
   bio: `Desarrollador de Software Full Stack, con amplios conocimientos en
@@ -17,9 +17,9 @@ export default {
   trabajo en equipo.`,
   bio2: 'Especializado en programación web y móvil usando las tecnologías:',
   currentlyLearning: 'Aprendiendo actualmente:',
-  learning1: 'Nodejs',
+  learning1: 'Flutter',
   learning2: 'Nest.js',
-  learning3: 'Inglés avanzado',
+  learning3: 'State Machines (xState)',
   workExperience: 'Exp. Laboral',
   previousJobs: 'TRABAJOS PREVIOS',
   date1: 'OCTUBRE 2017 - JUNIO 2019 (2 años)',
@@ -28,7 +28,7 @@ export default {
   date4: 'JUNIO 2019 - AGOSTO 2019 (2 meses)',
   date5: 'SEPTIEMBRE 2019 - PRESENTE',
   backEndExperience: 'Desarrollador backend usando PHP, Laravel y Postgresql.',
-  frontEndExperience: 'Desarrollador frontend usando Vue.js y Nuxt.',
+  frontEndExperience: 'Desarrollador frontend usando Vue.js, React y Nuxt.',
   firmwareExperience:
     'Desarrollador de firmware para dispositivos linux usando Java, Kotlin y C++.',
   mobileExperience:

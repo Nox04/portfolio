@@ -22,7 +22,7 @@
             <ul class="information margin-tb-30">
               <li>
                 <b class="font-yellow">{{ $t('born') }}</b> :
-                {{ $t('bornDate') }}
+                {{ $t('bornDate') }} ({{ yearsOld }})
               </li>
               <li>
                 <b class="font-yellow">EMAIL</b> :
@@ -60,6 +60,20 @@ export default {
     'intro-header': Header,
     LangSwitcher,
     SocialIcons
+  },
+  computed: {
+    yearsOld() {
+      return this.calculateYearsOld(new Date('1992-04-11'))
+    }
+  },
+  methods: {
+    calculateYearsOld(birthday) {
+      if (birthday instanceof Date) {
+        const ageDifMs = Date.now() - birthday
+        const ageDate = new Date(ageDifMs)
+        return Math.abs(ageDate.getUTCFullYear() - 1970)
+      }
+    }
   }
 }
 </script>
