@@ -4,6 +4,7 @@
       :href="images[0]"
       @click.prevent="show"
       target="_blank"
+      rel="noopener"
       class="lightbox__thumbnail"
     >
       Ver más

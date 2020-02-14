@@ -77,7 +77,7 @@ const Projects: Project[] = [
     title: 'InfoApp',
     stack: 'Typescript, Angular, Laravel.',
     images: ['http://infoapp.com.co/'],
-    icon: '/images/infoapp_icon.jpg',
+    icon: '/images/new_infoapp_icon.jpg',
     background: '/images/infoapp.jpg',
     description:
       'Desarrollo de aplicación móvil turística, landing page y backend. Seleccionada como la aplicación oficial de turismo y reservas para la JMJ 2019 Panamá.'
