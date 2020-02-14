@@ -5,7 +5,7 @@
       aria-label="Cambie el idioma a español"
     >
       <span class="flag">
-        <img src="/images/es-co-flag.jpg" :alt="$t('coFlag')" />
+        <img :alt="$t('coFlag')" src="/images/es-co-flag.jpg" />
       </span>
     </nuxt-link>
     <nuxt-link
@@ -13,7 +13,7 @@
       aria-label="Switch language to english"
     >
       <span class="flag">
-        <img src="/images/en-gb-flag.jpg" :alt="$t('gbFlag')" />
+        <img :alt="$t('gbFlag')" src="/images/en-gb-flag.jpg" />
       </span>
     </nuxt-link>
   </div>

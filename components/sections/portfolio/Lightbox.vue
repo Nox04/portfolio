@@ -2,21 +2,21 @@
   <div>
     <a
       :href="images[0]"
+      @click.prevent="show"
       target="_blank"
       class="lightbox__thumbnail"
-      @click.prevent="show"
     >
       Ver más
     </a>
-    <div v-if="visible" class="lightbox" @click="hide">
-      <div class="lightbox__close" @click="hide">
+    <div v-if="visible" @click="hide" class="lightbox">
+      <div @click="hide" class="lightbox__close">
         <slot name="icon-close">&times;</slot>
       </div>
-      <div class="lightbox__element" @click.stop="">
+      <div @click.stop="" class="lightbox__element">
         <div
-          class="lightbox__arrow lightbox__arrow--left"
           :class="{ 'lightbox__arrow--invisible': !hasPrevious }"
           @click.stop.prevent="previous"
+          class="lightbox__arrow lightbox__arrow--left"
         >
           <slot name="icon-previous">
             <svg
@@ -30,17 +30,17 @@
             </svg>
           </slot>
         </div>
-        <div class="lightbox__image" @click.stop="">
+        <div @click.stop="" class="lightbox__image">
           <slot name="loader"><LightboxDefaultLoader /></slot>
 
-          <slot v-if="displayImage" name="content" :url="images[index]">
+          <slot v-if="displayImage" :url="images[index]" name="content">
             <img :src="images[index]" />
           </slot>
         </div>
         <div
-          class="lightbox__arrow lightbox__arrow--right"
           :class="{ 'lightbox__arrow--invisible': !hasNext }"
           @click.stop.prevent="next"
+          class="lightbox__arrow lightbox__arrow--right"
         >
           <slot name="icon-next">
             <svg

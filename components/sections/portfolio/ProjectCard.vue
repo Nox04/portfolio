@@ -1,11 +1,11 @@
 <template>
   <div class="col-sm-12 col-md-12 col-lg-6">
     <div class="card">
-      <div class="card-header heading-footer" :style="background"></div>
+      <div :style="background" class="card-header heading-footer"></div>
       <div class="card-block">
         <img
-          class="panel-profile-img rounded-circle"
           :src="project.icon"
+          class="panel-profile-img rounded-circle"
           alt="Logo"
         />
         <p class="author-title">

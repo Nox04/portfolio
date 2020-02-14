@@ -17,37 +17,37 @@
         <div class="col-sm-12 col-md-9">
           <previous-job
             :job="$t('fullStack').toUpperCase()"
-            employer="Nucleus Studio"
             :dates="$t('date5')"
             :activities="[$t('backEndExperience'), $t('frontEndExperience')]"
+            employer="Nucleus Studio"
           />
           <previous-job
             :job="$t('mobile').toUpperCase()"
-            employer="Vendty"
             :dates="$t('date4')"
             :activities="[$t('mobileExperience2')]"
+            employer="Vendty"
           />
           <previous-job
             :job="$t('fullStack').toUpperCase()"
-            employer="ORION SOLUTIONS"
             :dates="$t('date1')"
             :activities="[
               $t('mobileExperience'),
               $t('firmwareExperience'),
               $t('backEndExperience')
             ]"
+            employer="ORION SOLUTIONS"
           />
           <previous-job
             :job="$t('backEnd').toUpperCase()"
-            employer="ESISTEL"
             :dates="$t('date2')"
             :activities="[$t('backEndExperience')]"
+            employer="ESISTEL"
           />
           <previous-job
             :job="$t('fullStack').toUpperCase()"
-            employer="GIMSABER"
             :dates="$t('date3')"
             :activities="[$t('backEndExperience')]"
+            employer="GIMSABER"
           />
         </div>
         <!-- col-sm-9 -->
