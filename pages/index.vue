@@ -24,7 +24,7 @@ export default {
   },
   data() {
     return {
-      title: 'Nox - Portafolio'
+      title: 'Juan Angarita - Portfolio'
     }
   },
   head() {
