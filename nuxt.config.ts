@@ -29,7 +29,20 @@ const config: Configuration = {
     ]
   },
 
-  buildModules: ['@nuxt/typescript-build'],
+  buildModules: [
+    '@nuxt/typescript-build',
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: 'UA-158523703-1',
+        debug: {
+          enabled: true, // default value
+          trace: true, // default value
+          sendHitTask: true // default value
+        }
+      }
+    ]
+  ],
 
   /*
    ** Customize the progress-bar color
@@ -68,7 +81,7 @@ const config: Configuration = {
   ],
 
   manifest: {
-    name: 'Nox',
+    name: 'Juan Angarita',
     lang: 'es-CO'
   }
 }

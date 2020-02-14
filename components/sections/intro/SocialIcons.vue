@@ -23,13 +23,5 @@
         <i class="ion-social-skype"></i>
       </a>
     </li>
-    <li>
-      <a
-        href="https://wa.me/573168819879?text=Hola,%20te%20escribo%20desde%20"
-        :aria-label="$t('whatsapp')"
-      >
-        <i class="ion-social-whatsapp"></i>
-      </a>
-    </li>
   </ul>
 </template>

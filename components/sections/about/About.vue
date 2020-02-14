@@ -54,7 +54,6 @@
           <h4 class="margin-b-30">{{ $t('currentlyLearning') }}</h4>
           <div class="experience">
             <ul class="list">
-              <li>{{ $t('learning1') }}</li>
               <li>{{ $t('learning2') }}</li>
               <li>{{ $t('learning3') }}</li>
             </ul>

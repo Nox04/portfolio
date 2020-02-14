@@ -10,12 +10,10 @@ export default {
   bornDate: 'April 11, 1992',
   aboutMe: 'About me',
   professionalPath: 'PROFESSIONAL PATH',
-  bio: `Full Stack developer, with extensive knowledge in
-  diverse platforms and more than 8 years of experience, tech lover,
+  bio: `Full Stack developer with 8 years of experience, tech lover,
   innovative and constantly learning new stuff.
-  User and active contributor to free technologies (Linux, laravel,
-  vue, etc.), with a solid sense of duty, responsibility and
-  teamwork.`,
+  User and active contributor to open source projects (Linux, Laravel,
+  Vue, etc). with a solid sense of responsibility and teamwork.`,
   bio2: 'Specialized in web and mobile development using technologies like:',
   currentlyLearning: 'Currently learning:',
   learning1: 'Flutter',
