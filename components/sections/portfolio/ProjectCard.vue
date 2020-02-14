@@ -1,19 +1,21 @@
 <template>
-  <div class="col-sm-12 col-md-12 col-lg-6">
+  <div class="col-12 col-lg-6">
     <div class="card">
       <div :style="background" class="card-header heading-footer"></div>
-      <div class="card-block">
+      <div class="card-block bg-inverse">
         <img
           :src="project.icon"
           class="panel-profile-img rounded-circle"
           alt="Logo"
         />
         <p class="author-title">
-          <strong>Proyecto: </strong> {{ project.title }}
+          <strong class="font-yellow">Proyecto: </strong> {{ project.title }}
         </p>
-        <p class="author-title"><strong>Stack:</strong> {{ project.stack }}</p>
         <p class="author-title">
-          <strong>Descripción:</strong>
+          <strong class="font-yellow">Stack:</strong> {{ project.stack }}
+        </p>
+        <p class="author-title">
+          <strong class="font-yellow">Descripción:</strong>
           {{ project.description }}
         </p>
         <p class="author-title font-yellow">

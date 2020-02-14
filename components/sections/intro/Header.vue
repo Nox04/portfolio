@@ -1,7 +1,7 @@
 <template>
   <div class="heading-wrapper">
     <div class="row">
-      <div class="col-sm-6 col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="info">
           <a href="https://goo.gl/maps/LPWAZivrhPPJtuHL8">
             <i class="icon ion-ios-location-outline"></i>
@@ -13,7 +13,7 @@
         </div>
       </div>
 
-      <div class="col-sm-6 col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="info">
           <a href="tel:+573168819879">
             <i class="icon ion-ios-telephone-outline"></i>
@@ -24,7 +24,7 @@
           </a>
         </div>
       </div>
-      <div class="col-sm-6 col-md-6 col-lg-4">
+      <div class="col-12 col-lg-4">
         <div class="info">
           <a href="mailto:juan.angarita.11@gmail.com">
             <i class="icon ion-ios-chatboxes-outline"></i>

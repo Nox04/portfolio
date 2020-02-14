@@ -31,6 +31,7 @@
                 :size="10"
                 bg-color="#bbbbbb"
                 bar-color="#00adb5"
+                text-fg-color="#ffffff"
                 text-position="top"
                 text-align="left"
               />

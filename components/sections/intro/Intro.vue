@@ -5,16 +5,17 @@
       <intro-header />
       <div class="intro">
         <div class="row">
-          <div class="col-sm-8 col-md-4 col-lg-3">
+          <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
             <div class="profile-img margin-b-30">
               <img
                 :alt="$t('profilePicture')"
                 src="/images/profile-1-250x250.jpg"
+                class="img-fluid"
               />
             </div>
           </div>
 
-          <div class="col-sm-10 col-md-5 col-lg-6">
+          <div class="col-12 col-md-6 text-center text-md-left">
             <h2>
               <b>Juan David Angarita</b>
             </h2>
@@ -35,7 +36,7 @@
             </ul>
             <social-icons />
           </div>
-          <div class="col-sm-10 col-md-3 col-lg-3">
+          <div class="col-12 col-lg-3">
             <a
               class="downlad-btn"
               href="/documents/CV-Juan-David-Angarita.pdf"
