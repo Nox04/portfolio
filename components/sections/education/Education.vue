@@ -2,7 +2,7 @@
   <section class="education-section section">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 col-md-3">
+        <div class="col-12 col-md-3">
           <div class="heading">
             <h3>
               <b>{{ $t('education') }}</b>
@@ -14,17 +14,12 @@
         </div>
         <!-- col-sm-3 -->
 
-        <div class="col-sm-12 col-md-9">
+        <div class="col-12 col-md-9">
           <div class="education-wrapper">
             <education-item
               :title="$t('degree1')"
               :institution="$t('university1')"
               :date="$t('educationDate1')"
-            />
-            <education-item
-              :title="$t('degree2')"
-              :institution="$t('university2')"
-              :date="$t('educationDate2')"
             />
           </div>
           <!-- education-wrapper -->
