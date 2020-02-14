@@ -18,7 +18,9 @@
         </p>
         <p class="author-title font-yellow">
           <vue-pure-lightbox v-if="shouldRedirect" :images="project.images" />
-          <a v-else :href="project.images[0]" target="_blank" rel="noopener">Ver más</a>
+          <a v-else :href="project.images[0]" target="_blank" rel="noopener"
+            >Ver más</a
+          >
         </p>
       </div>
     </div>
