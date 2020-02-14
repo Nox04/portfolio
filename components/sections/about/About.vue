@@ -15,43 +15,28 @@
         <!-- col-sm-3 -->
         <div class="col-sm-12 col-md-9">
           <p class="margin-b-30">{{ $t('bio') }}</p>
-          <p class="margin-b-50">{{ $t('bio2') }}</p>
+          <p class="margin-b-30">{{ $t('bio2') }}</p>
           <div class="row">
-            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="94">
-                <p class="progress-title">Laravel</p>
-              </spinner>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="92">
-                <p class="progress-title">Vue.js</p>
-              </spinner>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="90">
-                <p class="progress-title">React</p>
-              </spinner>
-            </div>
-
-            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="84">
-                <p class="progress-title">Java</p>
-              </spinner>
-            </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="75">
-                <p class="progress-title">NodeJS</p>
-              </spinner>
-            </div>
-            <div class="col-6 col-sm-6 col-md-6 col-lg-2 text-center">
-              <spinner :progress="70">
-                <p class="progress-title">Kotlin</p>
-              </spinner>
+            <div
+              :key="index"
+              v-for="(skill, index) in skills"
+              class="col-12 text-center p-3"
+            >
+              <progress-bar
+                :val="skill.strength"
+                :text="skill.name"
+                :title="skill.name"
+                :bar-border-radius="10"
+                :font-size="16"
+                :size="10"
+                bg-color="#bbbbbb"
+                bar-color="#00adb5"
+                text-position="top"
+                text-align="left"
+              />
             </div>
           </div>
-          <h4 class="margin-b-30">{{ $t('currentlyLearning') }}</h4>
+          <h4 class="margin-tb-30">{{ $t('currentlyLearning') }}</h4>
           <div class="experience">
             <ul class="list">
               <li>{{ $t('learning2') }}</li>
@@ -68,11 +53,23 @@
   </section>
 </template>
 <script>
-import Spinner from './Spinner'
+import ProgressBar from 'vue-simple-progress'
 
 export default {
   components: {
-    Spinner
+    ProgressBar
+  },
+  data() {
+    return {
+      skills: [
+        { name: 'Laravel', strength: 94 },
+        { name: 'Vue.js', strength: 92 },
+        { name: 'React', strength: 90 },
+        { name: 'Java', strength: 84 },
+        { name: 'Node.js', strength: 75 },
+        { name: 'Kotlin', strength: 70 }
+      ]
+    }
   }
 }
 </script>
