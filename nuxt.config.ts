@@ -73,9 +73,16 @@ const config: Configuration = {
         vueI18n: { fallbackLocale: 'en' },
         vuex: false
       }
-    ]
+    ],
+    '@nuxtjs/sitemap'
   ],
-
+  sitemap: {
+    path: '/sitemap.xml',
+    hostname: 'https://juanangarita.com',
+    cacheTime: 1000 * 60 * 60 * 2,
+    trailingSlash: true,
+    gzip: true
+  },
   manifest: {
     name: 'Juan Angarita',
     lang: 'es-CO'
