@@ -1,6 +1,7 @@
 import { Configuration } from '@nuxt/types'
 
 const config: Configuration = {
+  target: 'static',
   /*
    ** Headers of the page
    */
