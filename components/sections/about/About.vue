@@ -63,12 +63,11 @@ export default {
   data() {
     return {
       skills: [
-        { name: 'Laravel', strength: 94 },
-        { name: 'Vue.js', strength: 92 },
-        { name: 'React', strength: 90 },
-        { name: 'Java', strength: 84 },
-        { name: 'Node.js', strength: 75 },
-        { name: 'Kotlin', strength: 70 }
+        { name: 'Laravel', strength: 96 },
+        { name: 'Vue.js', strength: 94 },
+        { name: 'React', strength: 94 },
+        { name: 'React Native', strength: 92 },
+        { name: 'Java', strength: 84 }
       ]
     }
   }

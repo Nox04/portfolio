@@ -18,7 +18,11 @@
           <previous-job
             :job="$t('fullStack').toUpperCase()"
             :dates="$t('date5')"
-            :activities="[$t('backEndExperience'), $t('frontEndExperience')]"
+            :activities="[
+              $t('backEndExperience'),
+              $t('frontEndExperience'),
+              $t('mobileExperience2')
+            ]"
             employer="Nucleus Studio"
           />
           <previous-job

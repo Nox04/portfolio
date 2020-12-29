@@ -2,6 +2,15 @@ import Project from '~/models/Project'
 
 const Projects: Project[] = [
   {
+    title: 'GameOn.',
+    stack: 'Typescript, React Native.',
+    images: ['https://gameon.app/'],
+    icon: '/images/gameon_icon.png',
+    background: '/images/gameon.jpg',
+    description:
+      'Aplicación web para competir con tus amigos intentando predecir los resultados de tus deportes favoritos. Desarrollo de la aplicación móvil usando React Native.'
+  },
+  {
     title: 'FanFood.',
     stack: 'Typescript, React.',
     images: ['https://order.fanfoodapp.com/'],

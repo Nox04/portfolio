@@ -2,7 +2,6 @@
   <section class="intro-section">
     <div class="container">
       <lang-switcher />
-      <intro-header />
       <div class="intro">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-3 d-flex justify-content-center">
@@ -33,6 +32,7 @@
               </li>
               <li><b class="font-yellow">NICKNAME</b> : Nox</li>
               <li><b class="font-yellow">OS</b> : Linux / OSX</li>
+              <li><b class="font-yellow">LOCATION</b> : Colombia (GMT-5)</li>
             </ul>
             <social-icons />
           </div>
