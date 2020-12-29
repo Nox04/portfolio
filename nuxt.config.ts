@@ -1,8 +1,6 @@
 import { Configuration } from '@nuxt/types'
 
 const config: Configuration = {
-  mode: 'universal',
-
   /*
    ** Headers of the page
    */
@@ -59,7 +57,6 @@ const config: Configuration = {
    ** Nuxt.js modules
    */
   modules: [
-    '@nuxtjs/pwa',
     [
       'nuxt-i18n',
       {
