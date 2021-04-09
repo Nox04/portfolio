@@ -19,8 +19,7 @@
     "nuxt": "^2.10.2",
     "nuxt-i18n": "^6.3.0",
     "ts-node": "^8.2.0",
-    "vue-property-decorator": "^8.1.1",
-    "vue-simple-progress": "^1.1.1"
+    "vue-property-decorator": "^8.1.1"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.3.2",

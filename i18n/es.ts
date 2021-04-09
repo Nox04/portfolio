@@ -10,7 +10,7 @@ export default {
   aboutMe: 'Sobre mí',
   professionalPath: 'TRAYECTORIA PROFESIONAL',
   bio: `Desarrollador de Software Full Stack, con amplios conocimientos en
-  diversas plataformas y más de 8 años de experiencia, amante de la
+  diversas plataformas y más de 9 años de experiencia, amante de la
   tecnología, innovador y en proceso constante de actualización.
   Usuario y contribuidor activo de tecnologías libres (Linux, laravel,
   vue, etc), con un sentido sólido del deber, la responsabilidad y el
