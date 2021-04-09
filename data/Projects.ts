@@ -11,6 +11,15 @@ const Projects: Project[] = [
       'Aplicación web para competir con tus amigos intentando predecir los resultados de tus deportes favoritos. Desarrollo de la aplicación móvil usando React Native.'
   },
   {
+    title: 'WeRecover.',
+    stack: 'Nuxt, Vue, Graphql.',
+    images: ['https://www.werecover.com/'],
+    icon: '/images/werecover_icon.jpg',
+    background: '/images/werecover.jpg',
+    description:
+      'Aplicación web para conectar profesionales de la salud mental con pacientes potenciales. Desarrollo de la aplicación web y librería de componentes interna usando Nuxt y Graphql.'
+  },
+  {
     title: 'FanFood.',
     stack: 'Typescript, React.',
     images: ['https://order.fanfoodapp.com/'],
