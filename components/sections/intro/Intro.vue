@@ -52,13 +52,11 @@
   </section>
 </template>
 <script>
-import Header from './Header'
 import LangSwitcher from './LangSwitcher'
 import SocialIcons from './SocialIcons'
 
 export default {
   components: {
-    'intro-header': Header,
     LangSwitcher,
     SocialIcons
   },

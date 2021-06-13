@@ -19,6 +19,7 @@
   ],
   // add your custom rules here
   "rules": {
-    "@typescript-eslint/no-unused-vars": [2, { "args": "none" }]
+    "@typescript-eslint/no-unused-vars": [2, { "args": "none" }],
+    "vue/comment-directive": 0
   }
 }
