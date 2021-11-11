@@ -11,7 +11,7 @@ import Intro from '~/components/sections/intro/Intro.vue'
 import About from '~/components/sections/about/About.vue'
 import Experience from '~/components/sections/experience/Experience.vue'
 import Portfolio from '~/components/sections/portfolio/Portfolio.vue'
-import '~/static/styles/styles.scss'
+import '~/assets/styles/styles.scss'
 
 export default {
   components: {
@@ -39,7 +39,7 @@ export default {
           href: 'https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap',
           defer: true,
         },
-        { rel: 'icon', type: 'image/x-icon', href: '/static/favicon.ico' },
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
         {
           rel: 'stylesheet',
           href: 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css',

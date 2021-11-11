@@ -14,7 +14,7 @@
       <div class="mb-10 px-4 flex justify-center">
         <img
           alt="profile picture"
-          src="/static/images/profile-1-250x250.jpg"
+          src="/images/profile-1-250x250.jpg"
           class="rounded-md max-h-[250px] md:max-h-[275px] lg:max-h-[250px]"
         />
       </div>
@@ -67,7 +67,7 @@
             lg:px-10 lg:py-3
             md:rounded-md
           "
-          href="/static/documents/CV-Juan-David-Angarita.pdf"
+          href="/documents/CV-Juan-David-Angarita.pdf"
           download
         >
           <i class="la la-cloud-download-alt text-2xl mr-2" />

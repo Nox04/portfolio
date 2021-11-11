@@ -3,7 +3,7 @@
     <div :style="background" class="bg-cover overflow-hidden h-44"></div>
     <div class="px-4">
       <img
-        :src="`/static/${project.icon}`"
+        :src="logo"
         class="rounded-full h-32 w-32 border-2 -mt-16 mb-4"
         alt="Logo"
       />
@@ -24,14 +24,17 @@
     </div>
   </div>
 </template>
-<script>
+<script lang="ts">
 export default {
   props: {
     project: Object,
   },
   computed: {
     background() {
-      return `background-image: url(/static/${this.project.background});`
+      return `background-image: url(${this.project.background});`
+    },
+    logo() {
+      return this.project.icon
     },
     shouldRedirect() {
       return this.project.images.length > 1

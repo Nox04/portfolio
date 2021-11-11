@@ -13,7 +13,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: (theme) => ({
-        intro: "url('/static/images/header-bg.jpg')",
+        intro: "url('/images/header-bg.jpg')",
       }),
     },
     colors: {

@@ -24,7 +24,7 @@
     </div>
   </section>
 </template>
-<script>
+<script lang="ts">
 import Projects from '~/data/Projects'
 import ProjectCard from './ProjectCard.vue'
 
