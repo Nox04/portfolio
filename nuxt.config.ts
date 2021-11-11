@@ -1,8 +1,5 @@
 import { defineNuxtConfig } from 'nuxt3'
-const config = defineNuxtConfig({
-  nitro: {
-    preset: 'server',
-  },
+export default defineNuxtConfig({
   css: ['~/static/styles/styles.scss'],
   build: {
     postcss: {
@@ -14,10 +11,4 @@ const config = defineNuxtConfig({
       },
     },
   },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#00adb5' },
 })
-
-export default config
