@@ -11,6 +11,7 @@ import Intro from '~/components/sections/intro/Intro.vue'
 import About from '~/components/sections/about/About.vue'
 import Experience from '~/components/sections/experience/Experience.vue'
 import Portfolio from '~/components/sections/portfolio/Portfolio.vue'
+import '~/static/styles/styles.scss'
 
 export default {
   components: {
