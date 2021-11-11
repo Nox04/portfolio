@@ -1,7 +1,7 @@
 export default interface Project {
   title: string
   stack: string
-  images: Array<string>
+  link: string | null
   icon: string
   background: string
   description: string

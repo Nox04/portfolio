@@ -1,42 +1,25 @@
-import { Configuration } from '@nuxt/types'
-
-const config: Configuration = {
+import { defineNuxtConfig } from 'nuxt3'
+const config = defineNuxtConfig({
   target: 'static',
-  /*
-   ** Headers of the page
-   */
-  head: {
-    title: process.env.npm_package_name,
-    meta: [
-      { charset: 'utf-8' },
-      { name: 'theme-color', content: '#151515' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      }
-    ],
-    noscript: [{ innerHTML: 'This website requires JavaScript.' }],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      {
-        rel: 'stylesheet',
-        href:
-          'https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap',
-        defer: true
-      }
-    ]
+  css: ['~/static/styles/styles.scss'],
+  build: {
+    postcss: {
+      postcssOptions: {
+        plugins: {
+          tailwindcss: {},
+          autoprefixer: {},
+        },
+      },
+    },
   },
 
   buildModules: [
-    '@nuxt/typescript-build',
-    [
-      '@nuxtjs/google-analytics',
-      {
-        id: 'UA-158523703-1'
-      }
-    ]
+    // [
+    //   '@nuxtjs/google-analytics',
+    //   {
+    //     id: 'UA-158523703-1'
+    //   }
+    // ]
   ],
 
   /*
@@ -45,46 +28,36 @@ const config: Configuration = {
   loading: { color: '#00adb5' },
 
   /*
-   ** Global CSS
-   */
-  css: [],
-
-  /*
-   ** Plugins to load before mounting the App
-   */
-  plugins: [],
-
-  /*
    ** Nuxt.js modules
    */
   modules: [
-    [
-      'nuxt-i18n',
-      {
-        locales: [
-          { code: 'en', iso: 'en-US', file: 'en.ts', name: 'English' },
-          { code: 'es', iso: 'es-CO', file: 'es.ts', name: 'Spanish' }
-        ],
-        langDir: 'i18n/',
-        lazy: true,
-        defaultLocale: 'en',
-        vueI18n: { fallbackLocale: 'en' },
-        vuex: false
-      }
-    ],
-    '@nuxtjs/sitemap'
+    // [
+    //   'nuxt-i18n',
+    //   {
+    //     locales: [
+    //       { code: 'en', iso: 'en-US', file: 'en.ts', name: 'English' },
+    //       { code: 'es', iso: 'es-CO', file: 'es.ts', name: 'Spanish' }
+    //     ],
+    //     langDir: 'i18n/',
+    //     lazy: true,
+    //     defaultLocale: 'en',
+    //     vueI18n: { fallbackLocale: 'en' },
+    //     vuex: false
+    //   }
+    // ],
+    // '@nuxtjs/sitemap'
   ],
-  sitemap: {
-    path: '/sitemap.xml',
-    hostname: 'https://juanangarita.com',
-    cacheTime: 1000 * 60 * 60 * 2,
-    trailingSlash: true,
-    gzip: true
-  },
-  manifest: {
-    name: 'Juan Angarita',
-    lang: 'es-CO'
-  }
-}
+  // sitemap: {
+  //   path: '/sitemap.xml',
+  //   hostname: 'https://juanangarita.com',
+  //   cacheTime: 1000 * 60 * 60 * 2,
+  //   trailingSlash: true,
+  //   gzip: true
+  // },
+  // manifest: {
+  //   name: 'Juan Angarita',
+  //   lang: 'es-CO'
+  // }
+})
 
 export default config

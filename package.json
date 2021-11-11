@@ -5,44 +5,19 @@
   "author": "Nox",
   "private": true,
   "scripts": {
-    "dev": "nuxt-ts",
-    "build": "nuxt-ts build",
-    "start": "nuxt-ts start",
-    "generate": "nuxt-ts generate",
-    "lint": "eslint '*/**/*.{js,ts,vue}' --ignore-path .gitignore",
-    "precommit": "npm run lint"
-  },
-  "dependencies": {
-    "@nuxt/typescript-runtime": "^0.2.2",
-    "@nuxtjs/sitemap": "^2.0.1",
-    "cross-env": "^6.0.3",
-    "nuxt": "^2.10.2",
-    "nuxt-i18n": "^6.3.0",
-    "ts-node": "^8.2.0",
-    "vue-property-decorator": "^8.1.1"
+    "dev": "nuxt dev",
+    "build": "nuxt build",
+    "start": "node .output/server/index.mjs"
   },
   "devDependencies": {
-    "@nuxt/typescript-build": "^0.3.2",
-    "@nuxtjs/eslint-config": "^1.1.2",
-    "@nuxtjs/google-analytics": "^2.2.3",
-    "@typescript-eslint/eslint-plugin": "^2.6.0",
-    "@typescript-eslint/parser": "^2.6.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^6.6.0",
-    "eslint-config-prettier": "^6.5.0",
-    "eslint-config-standard": ">=12.0.0",
-    "eslint-loader": "^3.0.2",
-    "eslint-plugin-import": ">=2.16.0",
-    "eslint-plugin-jest": ">=22.3.0",
-    "eslint-plugin-node": ">=8.0.1",
-    "eslint-plugin-nuxt": ">=0.4.2",
-    "eslint-plugin-prettier": "^3.0.1",
-    "eslint-plugin-promise": ">=4.0.1",
-    "eslint-plugin-standard": ">=4.0.0",
-    "eslint-plugin-vue": "^5.2.2",
-    "node-sass": "^4.12.0",
-    "nodemon": "^1.18.9",
-    "prettier": "^1.16.4",
-    "sass-loader": "^10.1.1"
-  }
+    "autoprefixer": "^10.3.7",
+    "nuxt3": "latest",
+    "postcss": "^8.3.9",
+    "prettier": "^2.4.1",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "tailwindcss": "^2.2.17",
+    "typescript": "^4.4.4"
+  },
+  "dependencies": {}
 }

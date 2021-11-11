@@ -1,72 +1,41 @@
 <template>
-  <div class="col-12 col-lg-6">
-    <div class="card">
-      <div :style="background" class="card-header heading-footer"></div>
-      <div class="card-block bg-inverse">
-        <img
-          :src="project.icon"
-          class="panel-profile-img rounded-circle"
-          alt="Logo"
-        />
-        <p class="author-title">
-          <strong class="font-yellow">Proyecto: </strong> {{ project.title }}
-        </p>
-        <p class="author-title">
-          <strong class="font-yellow">Stack:</strong> {{ project.stack }}
-        </p>
-        <p class="author-title">
-          <strong class="font-yellow">Descripción:</strong>
-          {{ project.description }}
-        </p>
-        <p class="author-title font-yellow">
-          <vue-pure-lightbox v-if="shouldRedirect" :images="project.images" />
-          <a v-else :href="project.images[0]" target="_blank" rel="noopener"
-            >Ver más</a
-          >
-        </p>
-      </div>
+  <div class="rounded-md border shadow-xl mx-0 sm:mx-4 md:mx-0">
+    <div :style="background" class="bg-cover overflow-hidden h-44"></div>
+    <div class="px-4">
+      <img
+        :src="`/static/${project.icon}`"
+        class="rounded-full h-32 w-32 border-2 -mt-16 mb-4"
+        alt="Logo"
+      />
+      <p class="leading-7">
+        <span class="font-bold text-brand">Project: </span> {{ project.title }}
+      </p>
+      <p class="leading-7">
+        <span class="font-bold text-brand">Stack:</span> {{ project.stack }}
+      </p>
+      <p class="leading-7">
+        <span class="font-bold text-brand">Description:</span>
+        {{ project.description }}
+      </p>
+      <p class="leading-7 text-brand font-semibold" v-if="project.link">
+        <a :href="project.link" target="_blank" rel="noopener">View More</a>
+      </p>
+      <p class="pb-8"></p>
     </div>
   </div>
 </template>
-<script lang="ts">
-import { Component, Vue, Prop } from 'vue-property-decorator'
-import VuePureLightbox from './Lightbox.vue'
-import Project from '~/models/Project'
-
-@Component({
-  components: {
-    VuePureLightbox
-  }
-})
-export default class ProjectCard extends Vue {
-  @Prop({ type: Object, required: true }) project!: Project
-  get background() {
-    return `background-image: url(${this.project.background});`
-  }
-  get shouldRedirect() {
-    return this.project.images.length > 1
-  }
+<script>
+export default {
+  props: {
+    project: Object,
+  },
+  computed: {
+    background() {
+      return `background-image: url(/static/${this.project.background});`
+    },
+    shouldRedirect() {
+      return this.project.images.length > 1
+    },
+  },
 }
 </script>
-
-<style type="text/css" scoped>
-.heading-footer {
-  background-size: cover;
-  height: 175px;
-  -webkit-box-shadow: none;
-  box-shadow: none;
-  border: 0px;
-}
-.panel-profile-img {
-  max-width: 150px;
-  margin-top: -100px;
-  margin-bottom: 5px;
-  border: 3px solid #fff;
-  border-radius: 50%;
-}
-.card {
-  border: 1px solid #dadada;
-  box-shadow: 8px 8px 16px 0 rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-}
-</style>

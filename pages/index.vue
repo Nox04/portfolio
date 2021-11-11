@@ -1,41 +1,51 @@
 <template>
-  <div>
-    <intro-section />
-    <about-section />
-    <experience-section />
-    <portfolio-section />
-    <education-section />
-  </div>
+  <intro />
+  <about />
+  <hr />
+  <experience />
+  <hr />
+  <portfolio />
 </template>
-<script>
-import Intro from '~/components/sections/intro/Intro'
-import About from '~/components/sections/about/About'
-import Experience from '~/components/sections/experience/Experience'
-import Portfolio from '~/components/sections/portfolio/Portfolio'
-import Education from '~/components/sections/education/Education'
+<script lang="ts">
+import Intro from '~/components/sections/intro/Intro.vue'
+import About from '~/components/sections/about/About.vue'
+import Experience from '~/components/sections/experience/Experience.vue'
+import Portfolio from '~/components/sections/portfolio/Portfolio.vue'
 
 export default {
   components: {
-    'intro-section': Intro,
-    'about-section': About,
-    'experience-section': Experience,
-    'portfolio-section': Portfolio,
-    'education-section': Education
+    Intro,
+    About,
+    Experience,
+    Portfolio,
   },
-  data() {
-    return {
-      title: 'Juan Angarita - Portfolio'
-    }
+  setup() {
+    useMeta({
+      title: 'Juan Angarita - Portfolio',
+      meta: [
+        { charset: 'utf-8' },
+        { name: 'theme-color', content: '#151515' },
+        { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Juan David Angarita personal website',
+        },
+      ],
+      link: [
+        {
+          rel: 'stylesheet',
+          href: 'https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap',
+          defer: true,
+        },
+        { rel: 'icon', type: 'image/x-icon', href: '/static/favicon.ico' },
+        {
+          rel: 'stylesheet',
+          href: 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css',
+          defer: true,
+        },
+      ],
+    })
   },
-  head() {
-    return {
-      title: this.title
-    }
-  },
-  computed: {
-    availableLocales() {
-      return this.$i18n.locales.filter(i => i.code !== this.$i18n.locale)
-    }
-  }
 }
 </script>

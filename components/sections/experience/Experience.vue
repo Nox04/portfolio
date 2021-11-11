@@ -1,73 +1,70 @@
 <template>
-  <section class="experience-section section">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12 col-md-3">
-          <div class="heading">
-            <h3>
-              <b>{{ $t('workExperience') }}</b>
-            </h3>
-            <h6 class="font-lite-black">
-              <b>{{ $t('previousJobs') }}</b>
-            </h6>
-          </div>
-        </div>
-        <!-- col-sm-3 -->
-
-        <div class="col-sm-12 col-md-9">
-          <previous-job
-            :job="$t('fullStack').toUpperCase()"
-            :dates="$t('date5')"
-            :activities="[
-              $t('backEndExperience'),
-              $t('frontEndExperience'),
-              $t('mobileExperience2')
-            ]"
-            employer="Nucleus Studio"
-          />
-          <previous-job
-            :job="$t('mobile').toUpperCase()"
-            :dates="$t('date4')"
-            :activities="[$t('mobileExperience2')]"
-            employer="Vendty"
-          />
-          <previous-job
-            :job="$t('fullStack').toUpperCase()"
-            :dates="$t('date1')"
-            :activities="[
-              $t('mobileExperience'),
-              $t('firmwareExperience'),
-              $t('backEndExperience')
-            ]"
-            employer="ORION SOLUTIONS"
-          />
-          <previous-job
-            :job="$t('backEnd').toUpperCase()"
-            :dates="$t('date2')"
-            :activities="[$t('backEndExperience')]"
-            employer="ESISTEL"
-          />
-          <previous-job
-            :job="$t('fullStack').toUpperCase()"
-            :dates="$t('date3')"
-            :activities="[$t('backEndExperience')]"
-            employer="GIMSABER"
-          />
-        </div>
-        <!-- col-sm-9 -->
-      </div>
-      <!-- row -->
+  <section
+    class="
+      px-5
+      my-10
+      flex flex-col
+      max-w-6xl
+      md:px-10 md:flex-row md:justify-center md:space-x-6
+      lg:space-x-12
+      mx-auto
+    "
+  >
+    <div class="mb-10">
+      <div class="h-3 w-14 bg-brand-dark rounded-full mb-5 mt-2" />
+      <h3 class="font-bold text-3xl mb-1.5 whitespace-normal">
+        Work Experience
+      </h3>
+      <h6 class="font-bold text-sm">PREVIOUS JOBS</h6>
     </div>
-    <!-- container -->
+    <div class="md:flex-grow md:pt-2">
+      <previous-job
+        job="Full Stack Developer"
+        dates="SEPTEMBER 2019 - PRESENT"
+        :activities="[
+          'Backend developer using PHP, Laravel and Postgresql.',
+          'Frontend developer using Vue.js, React and Nuxt.',
+          'Mobile apps developer using React native.',
+        ]"
+        employer="Nucleus Studio"
+      />
+      <previous-job
+        job="Full Stack Developer"
+        dates="JUNE 2019 - AUGUST 2019 (2 months)"
+        :activities="['Mobile apps developer using React native.']"
+        employer="Vendty"
+      />
+      <previous-job
+        job="Full Stack Developer"
+        dates="OCTOBER 2017 - JUNE 2019 (2 years)"
+        :activities="[
+          'Mobile apps developer using Native Android and React native.',
+          'Embedded linux devices firmware developer using Java, Kotlin and C++.',
+          'Backend developer using PHP, Laravel and Postgresql.',
+        ]"
+        employer="ORION SOLUTIONS"
+      />
+      <previous-job
+        job="Full Stack Developer"
+        dates="JANUARY 2014 - DECEMBER 2016 (3 years)"
+        :activities="['Backend developer using PHP, Laravel and Postgresql.']"
+        employer="ESISTEL"
+      />
+      <previous-job
+        job="Full Stack Developer"
+        dates="FEBRUARY 2011 - DECEMBER 2013 (3 years)"
+        :activities="['Backend developer using PHP, Laravel and Postgresql.']"
+        employer="GIMSABER"
+      />
+    </div>
   </section>
-  <!-- experience-section -->
 </template>
 <script>
 import PreviousJob from './PreviousJob'
 
 export default {
   components: {
-    PreviousJob
-  }
+    PreviousJob,
+  },
 }
 </script>

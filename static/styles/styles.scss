@@ -1,0 +1,24 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+* {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+}
+
+.list-custom-disc > li:before {
+  content: '';
+  position: absolute;
+  top: 35%;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  margin-top: -5px;
+  display: block;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+}
+.list-custom-disc > li {
+  padding-left: 1.2rem;
+  padding-bottom: 0.5rem;
+}
