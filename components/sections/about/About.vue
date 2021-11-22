@@ -35,13 +35,14 @@
         <li>Next.js</li>
         <li>PHP</li>
         <li>Laravel</li>
+        <li>Node.js</li>
         <li>Tailwind</li>
       </ul>
       <h4 class="mt-10 mb-4 text-lg">Currently learning:</h4>
       <ul class="mb-10 list-custom-disc">
         <li>Solidity</li>
         <li>Smart Contracts</li>
-        <li>Rust</li>
+        <li>Blockchain</li>
       </ul>
     </div>
   </section>

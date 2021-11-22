@@ -19,14 +19,13 @@
     </div>
     <div class="md:flex-grow md:pt-2">
       <previous-job
-        job="Full Stack Developer"
+        job="Frontend Leader"
         dates="SEPTEMBER 2019 - PRESENT"
         :activities="[
-          'Backend developer using PHP, Laravel and Postgresql.',
-          'Frontend developer using Vue.js, React and Nuxt.',
-          'Mobile apps developer using React native.',
+          'Lead and Scale predictions making applications using Next.js/Tailwind to +2M users.',
+          'Developed from scratch a React Native mobile app for predictions making, with real time results, leaderboards, challenges, public profiles, chat, etc.',
         ]"
-        employer="Nucleus Studio"
+        employer="Devbase/GameOn"
       />
       <previous-job
         job="Full Stack Developer"

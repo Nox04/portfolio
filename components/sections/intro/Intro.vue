@@ -24,24 +24,24 @@
         <h4 class="text-brand text-xl">Full Stack Developer</h4>
         <ul class="my-8 md:my-4">
           <li>
-            <span class="font-bold text-brand uppercase">Born</span> : April 11,
-            1992 ({{ yearsOld }})
+            <span class="font-bold text-brand">Born</span> : April 11, 1992 ({{
+              yearsOld
+            }})
           </li>
           <li>
-            <span class="font-bold text-brand uppercase">EMAIL</span> :
+            <span class="font-bold text-brand">Email</span> :
             <a href="mailto:juan.angarita.11@gmail.com">
               contact@juanangarita.com
             </a>
           </li>
+          <li><span class="font-bold text-brand">Nickname</span> : Nox</li>
           <li>
-            <span class="font-bold text-brand uppercase">NICKNAME</span> : Nox
+            <span class="font-bold text-brand">Web3</span> : noxklax.eth |
+            noxklax.sol
           </li>
           <li>
-            <span class="font-bold text-brand uppercase">OS</span> : Linux / OSX
-          </li>
-          <li>
-            <span class="font-bold text-brand uppercase">LOCATION</span> :
-            Colombia (GMT-5)
+            <span class="font-bold text-brand">Location</span> : Colombia
+            (GMT-5)
           </li>
         </ul>
         <social-icons />
