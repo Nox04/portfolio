@@ -2,6 +2,24 @@ import Project from '~/models/Project'
 
 const Projects: Project[] = [
   {
+    title: 'Avatars',
+    stack: 'Typescript, Next.js, Tailwind, Ethers, Hardhat',
+    link: 'https://avatars.juanangarita.com',
+    icon: '/images/avatars_icon.png',
+    background: '/images/avatars.png',
+    description:
+      'Web3 App for designing your avatar and minting your own NFT. I developed the UI, smart contracts (deployed on polyong) and backend.',
+  },
+  {
+    title: 'MX Cricket Predictor',
+    stack: 'Typescript, Next.js, Tailwind CSS',
+    link: 'https://www.youtube.com/watch?v=oT_IeO2dHHQ',
+    icon: '/images/mx_icon.jpg',
+    background: '/images/mx.jpg',
+    description:
+      'Predictions making app for cricket. Integrated with MX Player in India and serving more that 200k users.',
+  },
+  {
     title: 'GameOn.',
     stack: 'Typescript, React Native.',
     link: 'https://gameon.app/',

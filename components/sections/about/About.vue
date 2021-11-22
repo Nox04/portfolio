@@ -44,6 +44,39 @@
         <li>Smart Contracts</li>
         <li>Blockchain</li>
       </ul>
+      <h4 class="mt-10 mb-4 text-lg">Web3:</h4>
+      <ul class="mb-10 list-custom-disc">
+        <li>
+          <a
+            href="https://opensea.io/iNoxKlax"
+            class="text-brand"
+            target="_blank"
+            >BuildSpace NFTs</a
+          >
+        </li>
+        <li>Developer #5943 on Developer DAO</li>
+        <li>
+          <a
+            href="https://opensea.io/NoxKlax"
+            class="text-brand"
+            target="_blank"
+            >Other NFTs</a
+          >
+        </li>
+        <li>
+          <a href="https://dev.to/noxklax" class="text-brand" target="_blank"
+            >Writing in Spanish about Web3 here</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://polygonscan.com/txs?a=0xdf4c6739b8441436d3d62c5aaf9f0218913d90ff&f=5"
+            class="text-brand"
+            target="_blank"
+            >Contracts deployed on Polygon Mainnet here</a
+          >
+        </li>
+      </ul>
     </div>
   </section>
 </template>
