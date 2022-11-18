@@ -8,17 +8,21 @@
         alt="Logo"
       />
       <p class="leading-7">
-        <span class="font-bold text-brand">Project: </span> {{ project.title }}
+        <span class="font-bold text-brand">Project: </span>
+        {{ validProject.title }}
       </p>
       <p class="leading-7">
-        <span class="font-bold text-brand">Stack:</span> {{ project.stack }}
+        <span class="font-bold text-brand">Stack:</span>
+        {{ validProject.stack }}
       </p>
       <p class="leading-7">
         <span class="font-bold text-brand">Description:</span>
-        {{ project.description }}
+        {{ validProject.description }}
       </p>
-      <p class="leading-7 text-brand font-semibold" v-if="project.link">
-        <a :href="project.link" target="_blank" rel="noopener">View More</a>
+      <p class="leading-7 text-brand font-semibold" v-if="validProject.link">
+        <a :href="validProject.link" target="_blank" rel="noopener"
+          >View More</a
+        >
       </p>
       <p class="pb-8"></p>
     </div>
@@ -30,14 +34,17 @@ export default {
     project: Object,
   },
   computed: {
+    validProject() {
+      return this.project || {}
+    },
     background() {
-      return `background-image: url(${this.project.background});`
+      return `background-image: url(${this.validProject.background});`
     },
     logo() {
-      return this.project.icon
+      return this.validProject.icon
     },
     shouldRedirect() {
-      return this.project.images.length > 1
+      return this.validProject.images.length > 1
     },
   },
 }

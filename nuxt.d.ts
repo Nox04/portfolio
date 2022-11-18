@@ -2,7 +2,7 @@
 // Please do not manually modify this file.
 
 /// <reference path=".nuxt/nitro.d.ts" />
-/// <reference types="nuxt3" />
+/// <reference types="nuxt" />
 /// <reference path=".nuxt/components.d.ts" />
 /// <reference path=".nuxt/auto-imports.d.ts" />
 export {}
