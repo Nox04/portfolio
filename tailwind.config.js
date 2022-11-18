@@ -1,15 +1,20 @@
 const colors = require('tailwindcss/colors')
 
+delete colors['lightBlue']
+delete colors['warmGray']
+delete colors['trueGray']
+delete colors['coolGray']
+delete colors['blueGray']
+
 module.exports = {
   mode: 'jit',
-  purge: [
+  content: [
     './components/**/*.{vue,js}',
     './layouts/**/*.vue',
     './pages/**/*.vue',
     './plugins/**/*.{js,ts}',
     './nuxt.config.{js,ts}',
   ],
-  darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       backgroundImage: (theme) => ({
