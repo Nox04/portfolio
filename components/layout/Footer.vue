@@ -3,12 +3,6 @@
     <p><span class="copyleft">&copy;</span>Juan Angarita {{ year }}</p>
   </footer>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      year: new Date().getFullYear(),
-    }
-  },
-}
+<script setup lang="ts">
+const year = ref(new Date().getFullYear())
 </script>

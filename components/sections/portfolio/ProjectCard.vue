@@ -28,24 +28,15 @@
     </div>
   </div>
 </template>
-<script lang="ts">
-export default {
-  props: {
-    project: Object,
-  },
-  computed: {
-    validProject() {
-      return this.project || {}
-    },
-    background() {
-      return `background-image: url(${this.validProject.background});`
-    },
-    logo() {
-      return this.validProject.icon
-    },
-    shouldRedirect() {
-      return this.validProject.images.length > 1
-    },
-  },
-}
+<script lang="ts" setup>
+import Project from '~~/models/Project'
+const props = defineProps<{
+  project: Project
+}>()
+
+const validProject = computed(() => props.project || {})
+const background = computed(
+  () => `background-image: url(${validProject.value.background});`
+)
+const logo = computed(() => validProject.value.icon)
 </script>

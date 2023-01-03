@@ -1,14 +1,6 @@
 <template>
   <section
-    class="
-      px-5
-      my-10
-      flex flex-col
-      max-w-6xl
-      md:px-10 md:flex-row md:justify-center md:space-x-6
-      lg:space-x-12
-      mx-auto
-    "
+    class="px-5 my-10 flex flex-col max-w-6xl md:px-10 md:flex-row md:justify-center md:space-x-6 lg:space-x-12 mx-auto"
   >
     <div class="mb-10">
       <div class="h-3 w-14 bg-brand-dark rounded-full mb-5 mt-2" />
@@ -17,25 +9,14 @@
     </div>
     <div class="md:flex-grow md:pt-2 grid gap-4 grid-cols-1 lg:grid-cols-2">
       <project-card
-        v-for="(project, index) in projects"
+        v-for="(project, index) in Projects"
         :key="index"
         :project="project"
       />
     </div>
   </section>
 </template>
-<script lang="ts">
+<script lang="ts" setup>
 import Projects from '~/data/Projects'
 import ProjectCard from './ProjectCard.vue'
-
-export default {
-  data() {
-    return {
-      projects: Projects,
-    }
-  },
-  components: {
-    'project-card': ProjectCard,
-  },
-}
 </script>

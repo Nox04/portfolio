@@ -1,15 +1,7 @@
 <template>
   <section class="bg-intro bg-cover bg-no-repeat lg:px-5">
     <div
-      class="
-        flex flex-col
-        pt-10
-        justify-center
-        md:flex-row md:flex-wrap md:justify-start
-        lg:space-x-5 lg:flex-nowrap lg:py-10 lg:pt-20
-        max-w-7xl
-        mx-auto
-      "
+      class="flex flex-col pt-10 justify-center md:flex-row md:flex-wrap md:justify-start lg:space-x-5 lg:flex-nowrap lg:py-10 lg:pt-20 max-w-7xl mx-auto"
     >
       <div class="mb-10 px-4 flex justify-center">
         <img
@@ -48,25 +40,7 @@
       </div>
       <div class="w-full px-4 flex mt-2 lg:w-auto flex-col">
         <a
-          class="
-            w-full
-            bg-brand-dark
-            text-center
-            rounded-sm
-            flex
-            justify-center
-            items-center
-            py-4
-            mb-10
-            font-medium
-            hover:bg-brand-darker
-            focus:bg-brand-darker
-            transition
-            duration-500
-            ease-in-out
-            lg:px-10 lg:py-3
-            md:rounded-md
-          "
+          class="w-full bg-brand-dark text-center rounded-sm flex justify-center items-center py-4 mb-10 font-medium hover:bg-brand-darker focus:bg-brand-darker transition duration-500 ease-in-out lg:px-10 lg:py-3 md:rounded-md"
           href="/documents/CV-Juan-David-Angarita.pdf"
           download
         >
@@ -77,26 +51,15 @@
     </div>
   </section>
 </template>
-<script>
+<script setup lang="ts">
 import SocialIcons from './SocialIcons.vue'
 
-export default {
-  components: {
-    SocialIcons,
-  },
-  computed: {
-    yearsOld() {
-      return this.calculateYearsOld(new Date('1992-04-11'))
-    },
-  },
-  methods: {
-    calculateYearsOld(birthday) {
-      if (birthday instanceof Date) {
-        const ageDifMs = Date.now() - birthday
-        const ageDate = new Date(ageDifMs)
-        return Math.abs(ageDate.getUTCFullYear() - 1970)
-      }
-    },
-  },
-}
+const yearsOld = computed(() => {
+  const birthday = new Date('1992-04-11')
+  if (birthday instanceof Date) {
+    const ageDifMs = Date.now() - birthday.getTime()
+    const ageDate = new Date(ageDifMs)
+    return Math.abs(ageDate.getUTCFullYear() - 1970)
+  }
+})
 </script>

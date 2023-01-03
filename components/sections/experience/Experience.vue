@@ -1,14 +1,6 @@
 <template>
   <section
-    class="
-      px-5
-      my-10
-      flex flex-col
-      max-w-6xl
-      md:px-10 md:flex-row md:justify-center md:space-x-6
-      lg:space-x-12
-      mx-auto
-    "
+    class="px-5 my-10 flex flex-col max-w-6xl md:px-10 md:flex-row md:justify-center md:space-x-6 lg:space-x-12 mx-auto"
   >
     <div class="mb-10">
       <div class="h-3 w-14 bg-brand-dark rounded-full mb-5 mt-2" />
@@ -58,12 +50,6 @@
     </div>
   </section>
 </template>
-<script>
+<script setup>
 import PreviousJob from './PreviousJob'
-
-export default {
-  components: {
-    PreviousJob,
-  },
-}
 </script>

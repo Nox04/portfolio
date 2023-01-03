@@ -16,25 +16,11 @@
     </ul>
   </div>
 </template>
-<script>
-export default {
-  props: {
-    job: {
-      type: String,
-      default: '',
-    },
-    employer: {
-      type: String,
-      default: '',
-    },
-    dates: {
-      type: String,
-      default: '',
-    },
-    activities: {
-      type: Array,
-      default: () => [],
-    },
-  },
-}
+<script setup lang="ts">
+defineProps<{
+  job: string
+  employer: string
+  dates: string
+  activities: string[]
+}>()
 </script>

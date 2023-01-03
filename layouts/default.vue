@@ -4,11 +4,6 @@
     <my-footer />
   </main>
 </template>
-<script>
-import Footer from '~/components/layout/Footer.vue'
-export default {
-  components: {
-    'my-footer': Footer,
-  },
-}
+<script setup lang="ts">
+import MyFooter from '~/components/layout/Footer.vue'
 </script>
