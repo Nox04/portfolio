@@ -2,6 +2,15 @@ import Project from '~/models/Project'
 
 const Projects: Project[] = [
   {
+    title: 'AFL Mint',
+    stack: 'Typescript, React, Tailwind, Flow, Cadence',
+    link: 'https://www.aflmint.com.au/',
+    icon: '/images/afl_icon.jpg',
+    background: '/images/afl.png',
+    description:
+      'Web3 App running on Flow for minting NFTs of your favorite AFL players. I developed the backend and the integration with Flow blockchain.',
+  },
+  {
     title: 'Avatars',
     stack: 'Typescript, Next.js, Tailwind, Ethers, Hardhat',
     link: 'https://avatars.juanangarita.com',

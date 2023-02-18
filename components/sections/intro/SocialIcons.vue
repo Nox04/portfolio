@@ -35,7 +35,7 @@ const socialMedia = [
   },
   {
     icon: 'envelope',
-    url: 'mailto:contacto@juanangarita.com',
+    url: 'mailto:contact@juanangarita.com',
   },
 ]
 </script>

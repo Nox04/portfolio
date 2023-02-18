@@ -6,14 +6,14 @@
       <div class="mb-10 px-4 flex justify-center">
         <img
           alt="profile picture"
-          src="/images/profile-1-250x250.jpg"
-          class="rounded-md max-h-[250px] md:max-h-[275px] lg:max-h-[250px]"
+          src="/images/profile_400x400.jpg"
+          class="rounded-xl max-h-[250px] md:max-h-[275px] lg:max-h-[250px]"
         />
       </div>
 
       <div class="text-center md:text-left lg:flex-grow">
         <h2 class="font-semibold text-4xl">Juan David Angarita</h2>
-        <h4 class="text-brand text-xl">Full Stack Developer</h4>
+        <h4 class="text-brand text-xl">Software Developer</h4>
         <ul class="my-8 md:my-4">
           <li>
             <span class="font-bold text-brand">Born</span> : April 11, 1992 ({{
@@ -22,7 +22,7 @@
           </li>
           <li>
             <span class="font-bold text-brand">Email</span> :
-            <a href="mailto:juan.angarita.11@gmail.com">
+            <a href="mailto:contact@juanangarita.com">
               contact@juanangarita.com
             </a>
           </li>
@@ -31,10 +31,7 @@
             <span class="font-bold text-brand">Web3</span> : noxklax.eth |
             noxklax.sol
           </li>
-          <li>
-            <span class="font-bold text-brand">Location</span> : Colombia
-            (GMT-5)
-          </li>
+          <li><span class="font-bold text-brand">TimeZone</span> : (GMT-5)</li>
         </ul>
         <social-icons />
       </div>

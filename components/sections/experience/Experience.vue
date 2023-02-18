@@ -11,16 +11,17 @@
     </div>
     <div class="md:flex-grow md:pt-2">
       <previous-job
-        job="Frontend Leader"
-        dates="SEPTEMBER 2019 - PRESENT"
+        job="Principal Software Engineer"
+        :dates="`SEPTEMBER 2019 - PRESENT (${howManyYearsInCurrentJob} years)`"
         :activities="[
-          'Lead and Scale predictions making applications using Next.js/Tailwind to +2M users.',
-          'Developed from scratch a React Native mobile app for predictions making, with real time results, leaderboards, challenges, public profiles, chat, etc.',
+          'Developed the full experience of the AFL Mint system. A system that allows users to collect, trade and play with digital cards.',
+          'Lead the development of prediction making applications using Next.js/Tailwind to +2M users.',
+          'Developed from scratch a React Native mobile app for prediction making, with real time results, leaderboards, challenges, public profiles, chat, etc.',
         ]"
-        employer="Devbase/GameOn"
+        employer="Devbase/GameOn/BeMedia"
       />
       <previous-job
-        job="Full Stack Developer"
+        job="Senior Frontend Developer"
         dates="JUNE 2019 - AUGUST 2019 (2 months)"
         :activities="['Mobile apps developer using React native.']"
         employer="Vendty"
@@ -42,7 +43,7 @@
         employer="ESISTEL"
       />
       <previous-job
-        job="Full Stack Developer"
+        job="Software Developer"
         dates="FEBRUARY 2011 - DECEMBER 2013 (3 years)"
         :activities="['Backend developer using PHP, Laravel and Postgresql.']"
         employer="GIMSABER"
@@ -52,4 +53,12 @@
 </template>
 <script setup>
 import PreviousJob from './PreviousJob'
+const howManyYearsInCurrentJob = computed(() => {
+  const birthday = new Date('2019-09-04')
+  if (birthday instanceof Date) {
+    const ageDifMs = Date.now() - birthday.getTime()
+    const ageDate = new Date(ageDifMs)
+    return Math.abs(ageDate.getUTCFullYear() - 1970)
+  }
+})
 </script>

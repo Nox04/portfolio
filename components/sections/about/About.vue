@@ -1,14 +1,6 @@
 <template>
   <section
-    class="
-      px-5
-      my-10
-      flex flex-col
-      max-w-6xl
-      md:px-10 md:flex-row md:justify-center md:space-x-20
-      lg:space-x-36
-      mx-auto
-    "
+    class="px-5 my-10 flex flex-col max-w-6xl md:px-10 md:flex-row md:justify-center md:space-x-20 lg:space-x-36 mx-auto"
   >
     <div class="mb-10 mr-4">
       <div class="h-3 w-14 bg-brand-dark rounded-full mb-5 mt-2" />
@@ -17,10 +9,10 @@
     </div>
     <div class="md:flex-grow md:pt-2">
       <p class="mb-10">
-        Full Stack developer with 10 years of experience, tech lover, innovative
-        and constantly learning new stuff. User and active contributor to open
-        source projects (Linux, Laravel, Vue, etc). with a solid sense of
-        responsibility and teamwork.
+        Full stack developer with 10+ years of experience, proficient in a range
+        of programming languages and technologies. I've worked on multiple
+        projects, from small web apps to complex systems, and am capable of
+        delivering high-quality solutions to meet client and user needs.
       </p>
       <p class="mb-10">
         Specialized in web and mobile development using technologies like:
@@ -37,12 +29,12 @@
         <li>Laravel</li>
         <li>Node.js</li>
         <li>Tailwind</li>
+        <li>Solidity</li>
+        <li>Cadence</li>
       </ul>
       <h4 class="mt-10 mb-4 text-lg">Currently learning:</h4>
       <ul class="mb-10 list-custom-disc">
-        <li>Solidity</li>
-        <li>Smart Contracts</li>
-        <li>Blockchain</li>
+        <li>Go</li>
       </ul>
       <h4 class="mt-10 mb-4 text-lg">Web3:</h4>
       <ul class="mb-10 list-custom-disc">
@@ -66,14 +58,6 @@
         <li>
           <a href="https://dev.to/noxklax" class="text-brand" target="_blank"
             >Writing in Spanish about Web3 here</a
-          >
-        </li>
-        <li>
-          <a
-            href="https://polygonscan.com/txs?a=0xdf4c6739b8441436d3d62c5aaf9f0218913d90ff&f=5"
-            class="text-brand"
-            target="_blank"
-            >Contracts deployed on Polygon Mainnet here</a
           >
         </li>
       </ul>
