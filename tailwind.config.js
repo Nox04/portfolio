@@ -16,11 +16,6 @@ module.exports = {
     './nuxt.config.{js,ts}',
   ],
   theme: {
-    extend: {
-      backgroundImage: (theme) => ({
-        intro: "url('/images/header-bg.jpg')",
-      }),
-    },
     colors: {
       ...colors,
       brand: '#00f7ff',

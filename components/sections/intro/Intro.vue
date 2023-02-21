@@ -1,5 +1,5 @@
 <template>
-  <section class="bg-intro bg-cover bg-no-repeat lg:px-5">
+  <section class="bg-cover bg-no-repeat lg:px-5" :style="background">
     <div
       class="flex flex-col pt-10 justify-center md:flex-row md:flex-wrap md:justify-start lg:space-x-5 lg:flex-nowrap lg:py-10 lg:pt-20 max-w-7xl mx-auto"
     >
@@ -7,7 +7,7 @@
         <nuxt-img
           alt="profile picture"
           src="/images/profile_400x400.jpg"
-          class="rounded-xl max-h-[250px] md:max-h-[275px] lg:max-h-[250px]"
+          class="rounded-xl"
           height="250"
           width="250"
           format="webp"
@@ -38,4 +38,12 @@
 </template>
 <script setup lang="ts">
 import SocialIcons from './SocialIcons.vue'
+const $img = useImage()
+
+const background = computed(
+  () =>
+    `background-image: url(${$img('/images/header-bg.jpg', {
+      format: 'webp',
+    })});`
+)
 </script>
