@@ -8,8 +8,8 @@
           alt="profile picture"
           src="/images/profile_400x400.jpg"
           class="rounded-xl"
-          height="250"
-          width="250"
+          :height="250"
+          :width="250"
           format="webp"
         />
       </div>
