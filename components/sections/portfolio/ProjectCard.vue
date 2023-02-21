@@ -37,8 +37,14 @@ const props = defineProps<{
 }>()
 
 const validProject = computed(() => props.project || {})
+const $img = useImage()
+
 const background = computed(
-  () => `background-image: url(${validProject.value.background});`
+  () =>
+    `background-image: url(${$img(validProject.value.background, {
+      height: 176,
+      format: 'webp',
+    })});`
 )
 const logo = computed(() => validProject.value.icon)
 </script>

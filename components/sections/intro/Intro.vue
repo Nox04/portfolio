@@ -4,12 +4,13 @@
       class="flex flex-col pt-10 justify-center md:flex-row md:flex-wrap md:justify-start lg:space-x-5 lg:flex-nowrap lg:py-10 lg:pt-20 max-w-7xl mx-auto"
     >
       <div class="mb-10 px-4 flex justify-center">
-        <img
+        <nuxt-img
           alt="profile picture"
           src="/images/profile_400x400.jpg"
           class="rounded-xl max-h-[250px] md:max-h-[275px] lg:max-h-[250px]"
           height="250"
           width="250"
+          format="webp"
         />
       </div>
 
