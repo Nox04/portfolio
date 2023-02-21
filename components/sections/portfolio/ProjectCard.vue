@@ -2,11 +2,12 @@
   <div class="rounded-md border shadow-xl mx-0 sm:mx-4 md:mx-0">
     <div :style="background" class="bg-cover overflow-hidden h-44"></div>
     <div class="px-4">
-      <img
+      <nuxt-img
         :src="logo"
         class="rounded-full h-32 w-32 border-2 -mt-16 mb-4"
         alt="Logo"
         loading="lazy"
+        format="webp"
       />
       <p class="leading-7">
         <span class="font-bold text-brand">Project: </span>

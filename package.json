@@ -11,8 +11,9 @@
     "allupdate": "yarn upgrade-interactive --latest"
   },
   "devDependencies": {
+    "@nuxt/image-edge": "^1.0.0-27919678.2f5b64b",
     "autoprefixer": "^10.4.13",
-    "nuxt": "^3.0.0",
+    "nuxt": "^3.2.2",
     "postcss": "^8.4.19",
     "prettier": "^2.7.1",
     "sass": "^1.56.1",
