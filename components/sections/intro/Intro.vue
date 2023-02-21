@@ -8,6 +8,8 @@
           alt="profile picture"
           src="/images/profile_400x400.jpg"
           class="rounded-xl max-h-[250px] md:max-h-[275px] lg:max-h-[250px]"
+          height="250"
+          width="250"
         />
       </div>
 
