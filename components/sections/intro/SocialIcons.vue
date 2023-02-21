@@ -8,7 +8,7 @@
         rel="noreferrer"
         class="p-1 rounded-full mx-2 md:mx-0 md:mr-2 flex items-center"
       >
-        <img :src="`/social/${sm.icon}.svg`" class="w-6 h-6" />
+        <img :src="`/social/${sm.icon}.svg`" class="w-6 h-6" :alt="sm.icon" />
       </a>
     </li>
   </ul>
