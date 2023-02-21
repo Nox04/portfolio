@@ -6,11 +6,9 @@
         :href="sm.url"
         target="_blank"
         rel="noreferrer"
-        class="p-2 bg-gray-600 rounded-full mx-2 md:mx-0 md:mr-4 flex items-center focus:bg-brand-dark hover:bg-brand-dark transition duration-500 ease-in-out"
+        class="p-1 rounded-full mx-2 md:mx-0 md:mr-2 flex items-center"
       >
-        <i
-          :class="`la la-${sm.icon} text-xl w-6 h-6 -mt-0.5 mb-0.5 md:-mr-0.5 md:ml-0.5`"
-        />
+        <img :src="`/social/${sm.icon}.svg`" class="w-6 h-6" />
       </a>
     </li>
   </ul>

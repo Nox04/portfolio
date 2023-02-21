@@ -29,11 +29,6 @@ useHead({
     },
   ],
   link: [
-    {
-      rel: 'preload',
-      as: 'style',
-      href: 'https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap',
-    },
     { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     {
       rel: 'icon',
@@ -55,11 +50,6 @@ useHead({
     {
       rel: 'manifest',
       href: '/site.webmanifest',
-    },
-    {
-      rel: 'preload',
-      as: 'style',
-      href: 'https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css',
     },
   ],
 })
