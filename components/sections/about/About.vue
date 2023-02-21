@@ -5,7 +5,7 @@
     <div class="mb-10 mr-4">
       <div class="h-3 w-14 bg-brand-dark rounded-full mb-5 mt-2" />
       <h3 class="font-bold text-3xl mb-1.5 whitespace-nowrap">About me</h3>
-      <h6 class="font-bold text-sm">PROFESSIONAL PATH</h6>
+      <h4 class="font-bold text-sm">PROFESSIONAL PATH</h4>
     </div>
     <div class="md:flex-grow md:pt-2">
       <p class="mb-10">

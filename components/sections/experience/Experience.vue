@@ -7,7 +7,7 @@
       <h3 class="font-bold text-3xl mb-1.5 whitespace-normal">
         Work Experience
       </h3>
-      <h6 class="font-bold text-sm">PREVIOUS JOBS</h6>
+      <h4 class="font-bold text-sm">PREVIOUS JOBS</h4>
     </div>
     <div class="md:flex-grow md:pt-2">
       <previous-job

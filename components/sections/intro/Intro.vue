@@ -13,7 +13,7 @@
 
       <div class="text-center md:text-left lg:flex-grow">
         <h2 class="font-semibold text-4xl">Juan David Angarita</h2>
-        <h4 class="text-brand text-xl">Software Developer</h4>
+        <h3 class="text-brand text-xl">Software Developer</h3>
         <ul class="my-8 md:my-4">
           <li>
             <span class="font-bold text-brand">Email</span> :
