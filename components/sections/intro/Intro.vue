@@ -16,11 +16,6 @@
         <h4 class="text-brand text-xl">Software Developer</h4>
         <ul class="my-8 md:my-4">
           <li>
-            <span class="font-bold text-brand">Born</span> : April 11, 1992 ({{
-              yearsOld
-            }})
-          </li>
-          <li>
             <span class="font-bold text-brand">Email</span> :
             <a href="mailto:contact@juanangarita.com">
               contact@juanangarita.com
@@ -35,28 +30,9 @@
         </ul>
         <social-icons />
       </div>
-      <div class="w-full px-4 flex mt-2 lg:w-auto flex-col">
-        <a
-          class="w-full bg-brand-dark text-center rounded-sm flex justify-center items-center py-4 mb-10 font-medium hover:bg-brand-darker focus:bg-brand-darker transition duration-500 ease-in-out lg:px-10 lg:py-3 md:rounded-md"
-          href="/documents/CV-Juan-David-Angarita.pdf"
-          download
-        >
-          <i class="la la-cloud-download-alt text-2xl mr-2" />
-          Download CV
-        </a>
-      </div>
     </div>
   </section>
 </template>
 <script setup lang="ts">
 import SocialIcons from './SocialIcons.vue'
-
-const yearsOld = computed(() => {
-  const birthday = new Date('1992-04-11')
-  if (birthday instanceof Date) {
-    const ageDifMs = Date.now() - birthday.getTime()
-    const ageDate = new Date(ageDifMs)
-    return Math.abs(ageDate.getUTCFullYear() - 1970)
-  }
-})
 </script>

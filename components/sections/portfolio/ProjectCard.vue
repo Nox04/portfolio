@@ -6,6 +6,7 @@
         :src="logo"
         class="rounded-full h-32 w-32 border-2 -mt-16 mb-4"
         alt="Logo"
+        loading="lazy"
       />
       <p class="leading-7">
         <span class="font-bold text-brand">Project: </span>

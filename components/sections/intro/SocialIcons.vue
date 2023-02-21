@@ -29,13 +29,5 @@ const socialMedia = [
     icon: 'twitter',
     url: 'https://twitter.com/NoxKlax',
   },
-  {
-    icon: 'rss',
-    url: 'https://dev.to/noxklax',
-  },
-  {
-    icon: 'envelope',
-    url: 'mailto:contact@juanangarita.com',
-  },
 ]
 </script>
