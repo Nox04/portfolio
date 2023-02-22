@@ -15,7 +15,14 @@
       </div>
 
       <div class="text-center md:text-left lg:flex-grow">
-        <h2 class="font-semibold text-4xl">Juan David Angarita</h2>
+        <div class="w-full relative flex justify-center md:justify-start">
+          <div
+            class="glitch relative font-semibold text-4xl w-full"
+            data-text="Juan David Angarita"
+          >
+            Juan David Angarita
+          </div>
+        </div>
         <h3 class="text-brand text-xl">Software Developer</h3>
         <ul class="my-6 md:my-4">
           <li>
@@ -47,3 +54,61 @@ const background = computed(
     })});`
 )
 </script>
+<style lang="scss">
+.glitch {
+  animation: glitch 5s 5s infinite;
+  max-width: 351px;
+}
+
+.glitch::before {
+  content: attr(data-text);
+  position: absolute;
+  left: -1px;
+  text-shadow: -1px 0 magenta;
+  overflow: hidden;
+  top: 0;
+  animation: noise-1 3s linear infinite alternate-reverse,
+    glitch 5s 5.05s infinite;
+}
+
+.glitch::after {
+  content: attr(data-text);
+  position: absolute;
+  left: 1px;
+  text-shadow: -1px 0 lightgreen;
+  overflow: hidden;
+  top: 0;
+  animation: noise-2 3s linear infinite alternate-reverse, glitch 5s 5s infinite;
+}
+
+@keyframes glitch {
+  1% {
+    transform: rotateX(10deg) skewX(75deg);
+  }
+  2% {
+    transform: rotateX(0deg) skewX(0deg);
+  }
+}
+
+@keyframes noise-1 {
+  $steps: 30;
+  @for $i from 1 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
+}
+
+@keyframes noise-2 {
+  $steps: 30;
+  @for $i from 0 through $steps {
+    #{percentage($i*(1/$steps))} {
+      $top: random(100);
+      $bottom: random(101 - $top);
+      clip-path: inset(#{$top}px 0 #{$bottom}px 0);
+    }
+  }
+}
+</style>
