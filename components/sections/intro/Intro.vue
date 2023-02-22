@@ -17,7 +17,7 @@
       <div class="text-center md:text-left lg:flex-grow">
         <div class="w-full relative flex justify-center md:justify-start">
           <div
-            class="glitch relative font-semibold text-4xl w-full"
+            class="glitch relative font-semibold text-4xl w-auto"
             data-text="Juan David Angarita"
           >
             Juan David Angarita
@@ -57,7 +57,6 @@ const background = computed(
 <style lang="scss">
 .glitch {
   animation: glitch 5s 5s infinite;
-  max-width: 351px;
 }
 
 .glitch::before {
@@ -74,7 +73,7 @@ const background = computed(
 .glitch::after {
   content: attr(data-text);
   position: absolute;
-  left: 1px;
+  left: 0px;
   text-shadow: -1px 0 lightgreen;
   overflow: hidden;
   top: 0;
