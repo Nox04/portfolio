@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper absolute rounded-xl w-[250px] h-[250px] overflow-hidden">
     <div
-      class="absolute overflow-hidden bg-black bg-opacity-90 rounded-xl w-full h-full slide -top-full"
+      class="absolute overflow-hidden rounded-lg bg-black bg-opacity-90 w-full h-full slide -top-full"
     >
       <div
-        class="bg relative w-full h-full m-auto overflow-hidden flex justify-center items-center"
+        class="bg relative w-full h-full m-auto overflow-hidden rounded-lg flex justify-center items-center will-change-transform"
       >
         <a
           href="/videos/aurora_borealis.mp4"
