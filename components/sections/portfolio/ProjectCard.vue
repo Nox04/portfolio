@@ -10,7 +10,7 @@
         format="webp"
       />
       <p class="leading-7">
-        <span class="font-bold text-brand">Project: </span>
+        <span class="font-bold text-brand">Project:</span>
         {{ validProject.title }}
       </p>
       <p class="leading-7">
@@ -22,9 +22,9 @@
         {{ validProject.description }}
       </p>
       <p class="leading-7 text-brand font-semibold" v-if="validProject.link">
-        <a :href="validProject.link" target="_blank" rel="noopener"
-          >View More</a
-        >
+        <a :href="validProject.link" target="_blank" rel="noopener">
+          View More
+        </a>
       </p>
       <p class="pb-8"></p>
     </div>

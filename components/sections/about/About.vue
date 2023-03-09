@@ -43,8 +43,9 @@
             href="https://opensea.io/iNoxKlax"
             class="text-brand"
             target="_blank"
-            >BuildSpace NFTs</a
           >
+            BuildSpace NFTs
+          </a>
         </li>
         <li>Developer #5943 on Developer DAO</li>
         <li>
@@ -52,13 +53,14 @@
             href="https://opensea.io/NoxKlax"
             class="text-brand"
             target="_blank"
-            >Other NFTs</a
           >
+            Other NFTs
+          </a>
         </li>
         <li>
-          <a href="https://dev.to/noxklax" class="text-brand" target="_blank"
-            >Writing in Spanish about Web3 here</a
-          >
+          <a href="https://dev.to/noxklax" class="text-brand" target="_blank">
+            Writing in Spanish about Web3 here
+          </a>
         </li>
       </ul>
     </div>

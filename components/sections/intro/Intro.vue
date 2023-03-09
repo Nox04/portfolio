@@ -3,7 +3,7 @@
     <div
       class="flex flex-col pt-10 justify-center md:flex-row md:flex-wrap md:justify-start lg:space-x-5 lg:flex-nowrap lg:py-10 lg:pt-20 max-w-7xl mx-auto"
     >
-      <div class="mb-10 px-4 flex justify-center">
+      <div class="mb-10 px-4 flex justify-center relative">
         <nuxt-img
           alt="profile picture"
           src="/images/profile_400x400.jpg"
@@ -12,6 +12,17 @@
           :width="250"
           format="webp"
         />
+        <div
+          class="wrapper absolute rounded-xl w-[250px] h-[250px] overflow-hidden"
+        >
+          <div
+            class="absolute bg-black bg-opacity-90 rounded-xl -left-full w-full h-full slide flex items-center justify-center"
+          >
+            <a href="/videos/aurora_borealis.mp4" target="_blank">
+              Aurora Borealis - 1:17
+            </a>
+          </div>
+        </div>
       </div>
 
       <div class="text-center md:text-left lg:flex-grow">
@@ -26,17 +37,24 @@
         <h3 class="text-brand text-xl">Software Developer</h3>
         <ul class="my-6 md:my-4">
           <li>
-            <span class="font-bold text-brand">Email</span> :
+            <span class="font-bold text-brand">Email</span>
+            :
             <a href="mailto:contact@juanangarita.com">
               contact@juanangarita.com
             </a>
           </li>
-          <li><span class="font-bold text-brand">Nickname</span> : Nox</li>
           <li>
-            <span class="font-bold text-brand">Web3</span> : noxklax.eth |
-            noxklax.sol
+            <span class="font-bold text-brand">Nickname</span>
+            : Nox
           </li>
-          <li><span class="font-bold text-brand">TimeZone</span> : (GMT-5)</li>
+          <li>
+            <span class="font-bold text-brand">Web3</span>
+            : noxklax.eth | noxklax.sol
+          </li>
+          <li>
+            <span class="font-bold text-brand">TimeZone</span>
+            : (GMT-5)
+          </li>
         </ul>
         <social-icons />
       </div>
@@ -55,6 +73,13 @@ const background = computed(
 )
 </script>
 <style lang="scss">
+.slide {
+  transition: 1s;
+}
+.wrapper:hover .slide {
+  transition: 1s;
+  left: 0;
+}
 .glitch {
   animation: glitch 5s 5s infinite;
 }
