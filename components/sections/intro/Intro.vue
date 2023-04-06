@@ -6,7 +6,7 @@
       <div class="mb-10 px-4 flex justify-center relative">
         <nuxt-img
           alt="profile picture"
-          src="/images/profile_400x400.jpg"
+          src="/images/profile_400x400.png"
           class="rounded-xl"
           :height="250"
           :width="250"
