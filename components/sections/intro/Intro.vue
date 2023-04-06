@@ -31,10 +31,6 @@
             : Nox
           </li>
           <li>
-            <span class="font-bold text-brand">Web3</span>
-            : noxklax.eth | noxklax.sol
-          </li>
-          <li>
             <span class="font-bold text-brand">TimeZone</span>
             : (GMT-5)
           </li>

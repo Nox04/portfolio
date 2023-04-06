@@ -11,15 +11,6 @@ const Projects: Project[] = [
       'Web3 App running on Flow for minting NFTs of your favorite AFL players. I developed the backend and the integration with Flow blockchain.',
   },
   {
-    title: 'Avatars',
-    stack: 'Typescript, Next.js, Tailwind, Ethers, Hardhat',
-    link: 'https://avatars.juanangarita.com',
-    icon: '/images/avatars_icon.png',
-    background: '/images/avatars.png',
-    description:
-      'Web3 App for designing your avatar and minting your own NFT. I developed the UI, smart contracts (deployed on polyong) and backend.',
-  },
-  {
     title: 'MX Cricket Predictor',
     stack: 'Typescript, Next.js, Tailwind CSS',
     link: 'https://www.youtube.com/watch?v=oT_IeO2dHHQ',
@@ -161,7 +152,7 @@ const Projects: Project[] = [
     icon: '/images/koulu_icon.jpg',
     background: '/images/koulu.jpg',
     description:
-      'Web App for planning, scoring and visualizing results from ICFES and SABER tests on Colombia.',
+      'Web App for planning, scoring and visualizing results from ICFES and SABER tests in Colombia.',
   },
   {
     title: 'Life Support',

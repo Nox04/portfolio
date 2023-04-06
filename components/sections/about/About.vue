@@ -31,37 +31,11 @@
         <li>Tailwind</li>
         <li>Solidity</li>
         <li>Cadence</li>
+        <li>Go</li>
       </ul>
       <h4 class="mt-10 mb-4 text-lg">Currently learning:</h4>
       <ul class="mb-10 list-custom-disc">
-        <li>Go</li>
-      </ul>
-      <h4 class="mt-10 mb-4 text-lg">Web3:</h4>
-      <ul class="mb-10 list-custom-disc">
-        <li>
-          <a
-            href="https://opensea.io/iNoxKlax"
-            class="text-brand"
-            target="_blank"
-          >
-            BuildSpace NFTs
-          </a>
-        </li>
-        <li>Developer #5943 on Developer DAO</li>
-        <li>
-          <a
-            href="https://opensea.io/NoxKlax"
-            class="text-brand"
-            target="_blank"
-          >
-            Other NFTs
-          </a>
-        </li>
-        <li>
-          <a href="https://dev.to/noxklax" class="text-brand" target="_blank">
-            Writing in Spanish about Web3 here
-          </a>
-        </li>
+        <li>LLMs Fine-Tuning</li>
       </ul>
     </div>
   </section>

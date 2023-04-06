@@ -18,7 +18,7 @@
           'Lead the development of prediction making applications using Next.js/Tailwind to +2M users.',
           'Developed from scratch a React Native mobile app for prediction making, with real time results, leaderboards, challenges, public profiles, chat, etc.',
         ]"
-        employer="Devbase/GameOn/BeMedia"
+        employer="Devbase/GameOn/BeMedia/Bluon"
       />
       <previous-job
         job="Senior Frontend Developer"
