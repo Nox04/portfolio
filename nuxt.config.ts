@@ -5,5 +5,9 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxt/image-edge'],
+  modules: ['nuxt-gtag', '@nuxt/image'],
+  gtag: {
+    id: 'G-L4E64XESQK',
+  },
+  devtools: { enabled: true },
 })

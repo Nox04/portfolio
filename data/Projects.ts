@@ -1,4 +1,4 @@
-import Project from '~/models/Project'
+import type { Project } from '~/models/Project'
 
 const Projects: Project[] = [
   {
@@ -165,4 +165,4 @@ const Projects: Project[] = [
   },
 ]
 
-export default Projects
+export { Projects }

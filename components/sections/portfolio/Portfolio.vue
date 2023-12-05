@@ -17,6 +17,6 @@
   </section>
 </template>
 <script lang="ts" setup>
-import Projects from '~/data/Projects'
+import { Projects } from '~/data/Projects'
 import ProjectCard from './ProjectCard.vue'
 </script>

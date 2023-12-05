@@ -1,4 +1,4 @@
-export default interface Project {
+export interface Project {
   title: string
   stack: string
   link: string | null

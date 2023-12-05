@@ -31,7 +31,7 @@
   </div>
 </template>
 <script lang="ts" setup>
-import Project from '~~/models/Project'
+import type { Project } from '~/models/Project'
 const props = defineProps<{
   project: Project
 }>()
