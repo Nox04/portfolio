@@ -2,6 +2,15 @@ import type { Project } from '~/models/Project'
 
 const Projects: Project[] = [
   {
+    title: 'Mural',
+    stack: 'Typescript, React, Nestjs',
+    link: 'https://www.muralpay.com/',
+    icon: '/images/mural_icon.png',
+    background: '/images/mural.jpg',
+    description:
+      'Mural is a platform for instant payments and invoices for contractors and vendors worldwide. I have been working on the frontend and backend development.',
+  },
+  {
     title: 'AFL Mint',
     stack: 'Typescript, React, Tailwind, Flow, Cadence',
     link: 'https://www.aflmint.com.au/',
