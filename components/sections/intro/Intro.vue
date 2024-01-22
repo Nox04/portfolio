@@ -15,7 +15,7 @@
         <AuroraBorealis />
       </div>
 
-      <div class="text-center md:text-left lg:flex-grow">
+      <div class="text-center md:text-left lg:flex-grow overflow-x-hidden">
         <GlitchedText text="Juan David Angarita" />
         <h3 class="text-brand text-xl">Software Developer</h3>
         <ul class="my-6 md:my-4">
