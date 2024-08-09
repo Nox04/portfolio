@@ -21,21 +21,20 @@
         <li>React</li>
         <li>React Native</li>
         <li>Typescript</li>
-        <li>Graphql</li>
-        <li>Vue</li>
-        <li>Nuxt.js</li>
-        <li>Next.js</li>
-        <li>PHP</li>
-        <li>Laravel</li>
         <li>Node.js</li>
+        <li>Nest.js</li>
+        <li>Graphql</li>
+        <li>Blockchain</li>
         <li>Tailwind</li>
+        <li>Vue</li>
+        <li>PHP</li>
         <li>Solidity</li>
         <li>Cadence</li>
         <li>Go</li>
       </ul>
       <h4 class="mt-10 mb-4 text-lg">Currently learning:</h4>
       <ul class="mb-10 list-custom-disc">
-        <li>LLMs Fine-Tuning</li>
+        <li>Blockchain Relayers</li>
       </ul>
     </div>
   </section>
