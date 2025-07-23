@@ -47,15 +47,6 @@ const Projects: Project[] = [
       'Mobile app for play with your friends making predictions for your favorite games. App developed using React Native.',
   },
   {
-    title: 'WeRecover.',
-    stack: 'Nuxt, Vue, Graphql.',
-    link: 'https://www.werecover.com/',
-    icon: '/images/werecover_icon.jpg',
-    background: '/images/werecover.jpg',
-    description:
-      'Web App for connecting mental health providers with potential patients. I worked on the web app development and UI library using Nuxt y Graphql.',
-  },
-  {
     title: 'FanFood.',
     stack: 'Typescript, React.',
     link: 'https://www.fanfoodapp.com/',
@@ -63,6 +54,15 @@ const Projects: Project[] = [
     background: '/images/fanfood.jpg',
     description:
       'Web App for creating food orders on stadiums, theaters and events without moving from your seat. I developed the Progressive Web Application (PWA) version.',
+  },
+  {
+    title: 'WeRecover.',
+    stack: 'Nuxt, Vue, Graphql.',
+    link: 'https://www.werecover.com/',
+    icon: '/images/werecover_icon.jpg',
+    background: '/images/werecover.jpg',
+    description:
+      'Web App for connecting mental health providers with potential patients. I worked on the web app development and UI library using Nuxt y Graphql.',
   },
   {
     title: 'Vendty.',
