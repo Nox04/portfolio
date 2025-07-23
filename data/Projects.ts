@@ -2,13 +2,22 @@ import type { Project } from '~/models/Project'
 
 const Projects: Project[] = [
   {
+    title: 'Okeanos',
+    stack: 'Typescript, React, Mapbox',
+    link: 'https://www.lumetec.com/',
+    icon: '/images/okeanos_icon.jpg',
+    background: '/images/okeanos.jpg',
+    description:
+      'Okeanos is a platform to deliver real-time monitoring, predictive threat detection, and proactive defense against physical risks for fiber optic cables. I fully developed the UI responsible for rendering all the real-time data using mapbox and feature rendering components.',
+  },
+  {
     title: 'Mural',
     stack: 'Typescript, React, Nestjs',
     link: 'https://www.muralpay.com/',
     icon: '/images/mural_icon.png',
     background: '/images/mural.jpg',
     description:
-      'Mural is a platform for instant payments and invoices for contractors and vendors worldwide. I have been working on the frontend and backend development.',
+      'Mural is a blockchain powered platform for instant payments and invoicing for contractors and vendors worldwide. I’ve been responsible for deploying critical pieces of the app as Virtual Accounts, LATAM OffRamp integrations, invoicing, etc.',
   },
   {
     title: 'AFL Mint',

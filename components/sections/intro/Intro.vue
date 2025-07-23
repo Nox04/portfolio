@@ -12,7 +12,7 @@
           :width="250"
           format="webp"
         />
-        <AuroraBorealis />
+        <!-- <AuroraBorealis /> -->
       </div>
 
       <div class="text-center md:text-left lg:flex-grow overflow-x-hidden">

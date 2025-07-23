@@ -28,9 +28,5 @@ const socialMedia = [
     icon: 'github',
     url: 'https://github.com/Nox04',
   },
-  {
-    icon: 'twitter',
-    url: 'https://twitter.com/NoxKlax',
-  },
 ]
 </script>

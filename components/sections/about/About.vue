@@ -9,10 +9,10 @@
     </div>
     <div class="md:flex-grow md:pt-2">
       <p class="mb-10">
-        Full stack developer with 10+ years of experience, proficient in a range
+        Full stack developer with 14 years of experience, proficient in a range
         of programming languages and technologies. I've worked on multiple
-        projects, from small web apps to complex systems, and am capable of
-        delivering high-quality solutions to meet client and user needs.
+        projects, from small web apps to complex systems, and I am capable of
+        delivering high-quality solutions to meet customer and user needs.
       </p>
       <p class="mb-10">
         Specialized in web and mobile development using technologies like:
@@ -24,10 +24,10 @@
         <li>Node.js</li>
         <li>Nest.js</li>
         <li>Graphql</li>
-        <li>Blockchain</li>
         <li>Tailwind</li>
         <li>Vue</li>
         <li>PHP</li>
+        <li>Blockchain</li>
         <li>Solidity</li>
         <li>Cadence</li>
         <li>Go</li>

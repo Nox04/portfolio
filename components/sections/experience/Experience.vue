@@ -14,11 +14,13 @@
         job="Principal Software Engineer"
         :dates="`SEPTEMBER 2019 - PRESENT (${howManyYearsInCurrentJob} years)`"
         :activities="[
+          'Developed the Frontend for Okeanos, a platform to to deliver real-time monitoring, predictive threat detection, and proactive defense against physical risks for fiber optic cables.',
+          'Developed critical pieces of the Mural app (blockchain powered platform for instant payments) as Virtual Accounts, LATAM OffRamp integrations, invoicing, etc.',
           'Developed the full experience of the AFL Mint system. A system that allows users to collect, trade and play with digital cards.',
           'Lead the development of prediction making applications using Next.js/Tailwind to +2M users.',
           'Developed from scratch a React Native mobile app for prediction making, with real time results, leaderboards, challenges, public profiles, chat, etc.',
         ]"
-        employer="Devbase/GameOn/BeMedia/Bluon"
+        employer="Devbase/GameOn/BeMedia/Mural/Lumetec"
       />
       <previous-job
         job="Senior Frontend Developer"
@@ -54,9 +56,9 @@
 <script setup>
 import PreviousJob from './PreviousJob'
 const howManyYearsInCurrentJob = computed(() => {
-  const birthday = new Date('2019-09-04')
-  if (birthday instanceof Date) {
-    const ageDifMs = Date.now() - birthday.getTime()
+  const startDate = new Date('2019-09-04')
+  if (startDate instanceof Date) {
+    const ageDifMs = Date.now() - startDate.getTime()
     const ageDate = new Date(ageDifMs)
     return Math.abs(ageDate.getUTCFullYear() - 1970)
   }
