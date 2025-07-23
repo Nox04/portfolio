@@ -40,7 +40,7 @@ const Projects: Project[] = [
   {
     title: 'GameOn.',
     stack: 'Typescript, React Native.',
-    link: 'https://gameon.app/',
+    link: null,
     icon: '/images/gameon_icon.png',
     background: '/images/gameon.jpg',
     description:
@@ -103,7 +103,7 @@ const Projects: Project[] = [
   {
     title: 'Venus.',
     stack: 'Java, Kotlin, C++.',
-    link: 'https://orioncol.com/',
+    link: null,
     icon: '/images/venus_icon.jpg',
     background: '/images/venus.jpg',
     description:
@@ -112,7 +112,7 @@ const Projects: Project[] = [
   {
     title: 'InfoApp',
     stack: 'Typescript, Angular, Laravel.',
-    link: 'http://infoapp.com.co/',
+    link: null,
     icon: '/images/new_infoapp_icon.jpg',
     background: '/images/infoapp.jpg',
     description:
@@ -121,7 +121,7 @@ const Projects: Project[] = [
   {
     title: 'Visor neuronal',
     stack: 'Javascript, D3, Matlab.',
-    link: 'https://visor.nox.kim/',
+    link: null,
     icon: '/images/visor_icon.jpg',
     background: '/images/visor.jpg',
     description:
@@ -130,7 +130,7 @@ const Projects: Project[] = [
   {
     title: 'Nemesis',
     stack: 'Java, Kotlin, Laravel.',
-    link: 'https://orioncol.com/',
+    link: null,
     icon: '/images/nemesis_icon.jpg',
     background: '/images/nemesis.jpg',
     description:
@@ -175,7 +175,7 @@ const Projects: Project[] = [
   {
     title: 'Life Support',
     stack: 'Typescript, Ionic 4, Firebase.',
-    link: 'https://play.google.com/store/apps/details?id=support.life.lifesupport&hl=es_419&gl=US',
+    link: null,
     icon: '/images/life_support_icon.jpg',
     background: '/images/life_support.jpg',
     description:
