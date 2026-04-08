@@ -3,20 +3,22 @@
     <div
       class="flex flex-col pt-10 justify-center md:flex-row md:flex-wrap md:justify-start lg:space-x-5 lg:flex-nowrap lg:py-10 lg:pt-20 max-w-7xl mx-auto"
     >
-      <div class="mb-10 px-4 flex justify-center relative">
-        <nuxt-img
+      <div class="mb-10 px-12 flex justify-center relative">
+        <!-- <nuxt-img
           alt="profile picture"
           src="/images/profile_400x400.png"
           class="rounded-xl"
           :height="250"
           :width="250"
           format="webp"
-        />
+        /> -->
         <!-- <AuroraBorealis /> -->
       </div>
 
       <div class="text-center md:text-left lg:flex-grow overflow-x-hidden">
-        <GlitchedText text="Juan David Angarita" />
+        <h1 class="relative font-semibold text-4xl w-auto">
+          Juan David Angarita
+        </h1>
         <h3 class="text-brand text-xl">Software Developer</h3>
         <ul class="my-6 md:my-4">
           <li>
